@@ -1,0 +1,26 @@
+html { 
+    height: 100%; width: 100%;   
+    border: 1px solid white; 
+    background-color: midnightblue; }
+    
+body { border: 1px solid white;
+    height: 97%;
+    width: 98.5%; }
+
+.homePageClass {
+    color: white; 
+    font-size: 25px; 
+    text-align: center; 
+    font-family: 'Slackey', cursive; }
+    
+.homePageClass a:link {
+    color: white; 
+    text-decoration: none; }
+    
+.homePageClass a:visited {
+    color: white; 
+    text-decoration: none; }
+    
+.homePageClass a:hover {
+    color: white; 
+    text-decoration: none; }

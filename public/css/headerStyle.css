@@ -1,0 +1,51 @@
+html { 
+    height: 100%; width: 100%; }
+
+body { border: 1px solid lightgrey;
+    background-color: white;
+    height: 97%;
+    width: 98.5%; }
+
+.headerBarClass {
+    border: 1px solid black; 
+    padding: .5%; }   
+    
+.homeIconClass {
+    border: 1px solid black;
+    /*font-family: 'Slackey', cursive; */
+    font-size: 20px; 
+    text-align: left; 
+    color: black;
+    padding: .5%;
+    text-decoration: none;
+}
+.homeIconClass a:link { color: black; text-decoration: none; }   
+.homeIconClass a:visited { color: black; text-decoration: none; }   
+.homeIconClass a:hover { color: black; text-decoration: none; }
+
+
+.search {
+    float: right;
+    color: black; 
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 25px;
+    width: 25%;
+}
+
+.menuClass {
+    border: 1px solid black;
+    color: black; 
+    font-size: 15px; 
+    text-align: right;
+    padding: .5%;
+     }
+.menuClass a:link { color: black; text-decoration: none; }  
+.menuClass a:visited { color: black; text-decoration: none; }
+.menuClass a:hover { color: black; text-decoration: none; border: 1px solid black; }
+
+.loginClass {
+    border: 1px solid white;
+}
+

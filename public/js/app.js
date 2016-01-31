@@ -7,5 +7,10 @@ angular.module('eCommerce', ['ui.router'])
                 templateUrl: 'js/routes/home/homeTmpl.html',
                 controller: 'homeController'
             })
+            .state('cart', {
+                url: '/cart',
+                templateUrl: 'js/routes/cart/cartTmpl.html',
+                controller: 'cartController'
+            })
         $urlRouterProvider.otherwise('/home');
     });

@@ -1,6 +1,7 @@
 
 var Product = require('./../models/productsModel');
 
+
 module.exports = {
     /** C */
     createProduct: function (req, res, next) {
@@ -10,11 +11,13 @@ module.exports = {
         })
     },
     /** R */
-    readProduct: function (req, res, next) {
-        Product.find(req.query).exec(function (err, readProduct) {
-            if (err) { res.status(500).send(err); }
-            else { res.send(readProduct); }
-        })
+    readProduct: function (req, res) {
+res.status(200).send();
+        // console.log("Searching for: " + req.query)
+        // Product.find(req.query).exec(function (err, readProduct) {
+        //     if (err) { res.status(500).send(err); }
+        //     else { res.send(readProduct); }
+        // })
     },
     /** U */
     updateProduct: function (req, res, next) {

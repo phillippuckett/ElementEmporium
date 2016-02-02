@@ -12,12 +12,11 @@ module.exports = {
     },
     /** R */
     readProduct: function (req, res) {
-res.status(200).send();
-        // console.log("Searching for: " + req.query)
-        // Product.find(req.query).exec(function (err, readProduct) {
-        //     if (err) { res.status(500).send(err); }
-        //     else { res.send(readProduct); }
-        // })
+        console.log("Searching for: " + req.query.title)
+        Product.find({ title: new RegExp(req.query.title, "i") }).exec(function (err, readProduct) {
+            if (err) { res.status(500).send(err); }
+            else { res.send(readProduct); }
+        })
     },
     /** U */
     updateProduct: function (req, res, next) {

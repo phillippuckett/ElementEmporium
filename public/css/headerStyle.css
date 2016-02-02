@@ -6,22 +6,23 @@ body { border: 1px solid lightgrey;
     height: 97%;
     width: 98.5%; }
 
-.headerBarClass {
+.header {
     border: 1px solid black; 
     padding: .5%; }   
     
-.homeIconClass {
+.homeIcon {
     border: 1px solid black;
-    /*font-family: 'Slackey', cursive; */
+    font-family: 'Slackey', cursive;
     font-size: 20px; 
     text-align: left; 
+    float: left;
     color: black;
-    padding: .5%;
+    padding: .25%;
     text-decoration: none;
 }
-.homeIconClass a:link { color: black; text-decoration: none; }   
-.homeIconClass a:visited { color: black; text-decoration: none; }   
-.homeIconClass a:hover { color: black; text-decoration: none; }
+.homeIcon a:link { color: black; text-decoration: none; }   
+.homeIcon a:visited { color: black; text-decoration: none; }   
+.homeIcon a:hover { color: black; text-decoration: none; }
 
 
 .search {
@@ -29,23 +30,37 @@ body { border: 1px solid lightgrey;
     color: black; 
     font-size: 15px;
     border: 1px solid black;
-    border-radius: 5px;
-    height: 25px;
+    border-radius: 5px 0 0 5px;
+    height: 30px;
     width: 25%;
 }
 
-.menuClass {
+.submit {
+    float: right;
+    color: black; 
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    height: 30px;    
+}
+
+.menu {
+    /*float: right;*/
+    /*display: none;*/
     border: 1px solid black;
     color: black; 
     font-size: 15px; 
     text-align: right;
-    padding: .5%;
+    padding: 1%;
      }
-.menuClass a:link { color: black; text-decoration: none; }  
-.menuClass a:visited { color: black; text-decoration: none; }
-.menuClass a:hover { color: black; text-decoration: none; border: 1px solid black; }
+.menu a:link { color: black; text-decoration: none; border: 1px solid lightgrey; }  
+.menu a:visited { color: black; text-decoration: none; border: 1px solid lightgrey; }
+.menu a:hover { color: black; text-decoration: none; border: 1px solid black; }
 
-.loginClass {
-    border: 1px solid white;
-}
+.login { padding: .5%; }
+.logout { padding: .5%; }
+.account { padding: .5%; }
+.cart { padding: .5%; }
+
+
 

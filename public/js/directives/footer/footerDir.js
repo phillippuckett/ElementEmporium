@@ -1,10 +1,10 @@
 angular.module('eCommerce')
-    .directive('copyrightDir', function () {
+    .directive('footerDir', function () {
         return {
             restrict: 'E',
-            templateUrl: 'js/directives/copyright/copyrightTmpl.html',
+            templateUrl: 'js/directives/footer/footerTmpl.html',
             controller: function ($scope) {
-                console.log("CopyrightDirCtrl Running");
+                console.log("Footer Directive");
                 var currentDate = new Date().getFullYear();
                 $scope.date = currentDate.toString();
             }

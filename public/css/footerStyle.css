@@ -1,0 +1,25 @@
+.footer {
+    border: 1px solid black;  
+    text-align: center;  
+    height: 250px;
+    margin: auto;
+}
+
+.column {
+    border: 1px solid lightgrey;
+    width: 25%;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+}
+.column p { color: grey; }
+.column ul { color: grey; }
+
+.copyright {
+    font-size: 10px;
+	text-align: center;
+	position: fixed; 
+    width: 100%;
+	bottom: 0;
+    height: 15px;
+}

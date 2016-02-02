@@ -1,6 +1,8 @@
 angular.module('eCommerce')
-    .controller('headerController', function ($scope) {
+    .controller('productController', function ($scope, productService) {
+       
         $scope.productSearch = function (productName) {
             console.log(productName);
+            productService.searchProduct(productName);
         }
     });

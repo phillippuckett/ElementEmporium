@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 /** Schema Object*/
 var ProductSchema = new Schema({
-    title: { type: String, unique: Boolean, required: true, index: String },
+    title: { type: String, unique: true, required: true, index: String },
     description: { type: String, required: true },
     reviews: [{
         reviewer: { type: String },

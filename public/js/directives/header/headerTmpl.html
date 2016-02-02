@@ -1,0 +1,31 @@
+<header id="header" class="header">
+
+    <!--eCommerce Icon-->
+    <div id="homeIcon" class="homeIcon">
+        <a href="/#/home">ECOMMERCE</a>
+    </div>
+
+    <!--Search Tool-->
+    <div>
+        <form ng-submit="productSearch(productName)">
+            <button style="float: right;" class="submit" type="submit">Search</button>
+            <input ng-model="productName" class="search" type="search" placeholder="abc" required>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Menu Bar-->
+    <div id="menu" class="menu">
+        <!--Login-->
+        <a href="/#/login" id="login" class="login">Login</a>
+        <!--My Account-->
+        <a href="/#/account" id="account" class="account">Account</a>
+        <!--Cart-->
+        <a href="/#/cart" id="cart" class="cart">Cart</a>
+        <!--Logout-->
+        <a href="/#/logout" id="logout" class="logout">Logout</a>
+    </div>
+
+</header>

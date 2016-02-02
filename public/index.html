@@ -6,34 +6,25 @@
     <title>eCommerce</title>
     <!--Styles-->
     <link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/footerStyle.css">
     <link rel="stylesheet" href="css/headerStyle.css">
     <link rel="stylesheet" href="css/homeStyle.css">
     <link rel="stylesheet" href="css/loginStyle.css">
-    <link rel="stylesheet" href="css/copyrightStyle.css">
-
-
+    <link rel="stylesheet" href="css/cartStyle.css">
+    <link rel="stylesheet" href="css/accountStyle.css">
+    <link rel="stylesheet" href="css/logoutStyle.css">
+    <link rel="stylesheet" href="css/signUpStyle.css">
 </head>
 
-<body ng-controller="headerController">
+<body ng-controller="productController">
     <!--Header-->
-    <div id="headerBarId" class="headerBarClass">
-        <a href="/#/home" id="homeIconId" class="homeIconClass">ECOMMERCE</a>
-        <form ng-submit="productSearch(productName)">        
-            <button style="float: right;" type="submit">SEARCH</button>
-        <input ng-model="productName" class="search" type="search" onkeypress="">
-        </form>
-
-    </div>
-
-    <div id="menuId" class="menuClass">
-        <login></login>
-    </div>
+    <header-dir></header-dir>
 
     <!--Ui-Router-->
     <ui-view></ui-view>
 
-    <!--CopyRight Directive-->
-    <copyright-dir></copyright-dir>
+    <!--Footer-->
+    <footer-dir></footer-dir>
 
     <!--Libraries-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
@@ -42,9 +33,19 @@
     <!--Scripts-->
     <script src="js/app.js"></script>
     <script src="js/routes/home/homeController.js"></script>
-    <script src="js/directives/login/loginDir.js"></script>
-    <script src="js/directives/copyright/copyrightDir.js"></script>
-    <script src="js/header/headerController.js"></script>
+    <script src="js/routes/login/loginController.js"></script>
+    <script src="js/routes/cart/cartController.js"></script>
+    <script src="js/routes/account/accountController.js"></script>
+    <script src="js/routes/signUp/signUpController.js"></script>
+    <script src="js/routes/logout/logoutController.js"></script>
+
+    <script src="js/directives/header/headerDir.js"></script>
+    <script src="js/directives/footer/footerDir.js"></script>
+
+    <script src="js/controllers/productController.js"></script>
+
+    <script src="js/services/productService.js"></script>
+
 
 </body>
 

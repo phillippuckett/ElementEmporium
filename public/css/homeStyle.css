@@ -1,6 +1,6 @@
-.homeViewClass {
+.homeView {
     border: 1px solid black;
     text-align: center;
-    height: 88%;
-    width: 99.75%;
-    margin: auto; top: 0; right: 0; bottom: 0; left: 0; }
+    height: 550px;
+    margin: auto; top: 0; right: 0; bottom: 0; left: 0; 
+    }

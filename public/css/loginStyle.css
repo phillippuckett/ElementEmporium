@@ -1,5 +1,27 @@
-.loginModalClass {
+.loginButton {
     border: 1px solid black;
-    height: 500px;
-    width: 500px;
+}
+
+.loginView {
+    border: 1px solid black;
+    text-align: center;
+    height: 550px;
+    margin: auto;
+    padding: .5%;
+}
+
+.loginHeader {
+    border: 1px solid black;
+}
+
+.signUp {
+    border: 1px solid black;
+}
+
+.loginInput { 
+    border: 1px solid lightgrey;    
+    border-radius: 5px;
+    font-size: 15px;
+    height: 30px;
+    width: 25%;
 }

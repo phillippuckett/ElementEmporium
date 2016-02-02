@@ -1,0 +1,14 @@
+.signUpView {
+    border: 1px solid black;
+    text-align: center;
+    height: 550px;
+}
+
+.signUpInput { 
+    border: 1px solid lightgrey;    
+    border-radius: 5px;
+    font-size: 15px;
+    height: 30px;
+    width: 25%;
+}
+

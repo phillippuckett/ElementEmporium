@@ -1,18 +1,18 @@
 html { 
     height: 100%; width: 100%; }
 
-body { border: 1px solid lightgrey;
+body { 
+    /*border: 1px solid lightgrey;*/
     background-color: white;
     height: 97%;
     width: 98.5%; }
 
 .header {
-    border: 1px solid black; 
+    /*border: 1px solid black; */
     padding: .5%; }   
     
 .homeIcon {
-    border: 1px solid black;
-    font-family: 'Slackey', cursive;
+    /*border: 1px solid black;*/
     font-size: 20px; 
     text-align: left; 
     float: left;
@@ -29,7 +29,7 @@ body { border: 1px solid lightgrey;
     float: right;
     color: black; 
     font-size: 15px;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     border-radius: 5px 0 0 5px;
     height: 30px;
     width: 25%;
@@ -39,15 +39,13 @@ body { border: 1px solid lightgrey;
     float: right;
     color: black; 
     font-size: 15px;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     border-radius: 0 5px 5px 0;
     height: 30px;    
 }
 
 .menu {
-    /*float: right;*/
-    /*display: none;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     color: black; 
     font-size: 15px; 
     text-align: right;

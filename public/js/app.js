@@ -32,5 +32,10 @@ angular.module('eCommerce', ['ui.router'])
                 templateUrl: 'js/routes/logout/logoutTmpl.html',
                 controller: 'logoutController'
             })
+            .state('products', {
+                url: '/products',
+                templateUrl: 'js/routes/product/productTmpl.html',
+                controller: 'productController'
+            })
         $urlRouterProvider.otherwise('/home');
     });

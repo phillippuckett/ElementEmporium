@@ -4,7 +4,7 @@ angular.module('eCommerce')
             restrict: 'E',
             templateUrl: 'js/directives/header/headerTmpl.html',
             controller: function ($scope) {
-                console.log("Header Directive");
+                console.log("Header");
             }
         }
     });

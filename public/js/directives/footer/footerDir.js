@@ -4,7 +4,7 @@ angular.module('eCommerce')
             restrict: 'E',
             templateUrl: 'js/directives/footer/footerTmpl.html',
             controller: function ($scope) {
-                console.log("Footer Directive");
+                console.log("Footer");
                 var currentDate = new Date().getFullYear();
                 $scope.date = currentDate.toString();
             }

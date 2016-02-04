@@ -17,20 +17,15 @@ angular.module('eCommerce', ['ui.router'])
                 templateUrl: 'js/routes/registration/registrationTmpl.html',
                 controller: 'registrationController',
             })
-            .state('cart', {
+            /*.state('cart', {
                 url: '/cart',
                 templateUrl: 'js/routes/cart/cartTmpl.html',
                 controller: 'cartController'
-            })
+            })*/
             .state('account', {
                 url: '/account',
                 templateUrl: 'js/routes/account/accountTmpl.html',
                 controller: 'accountController',
-                // onEnter: ['$state', 'auth', function ($state, auth) {
-                //     if (auth.isLoggedIn()) {
-                //         $state.go('login');
-                //     }
-                // }]
             })
             .state('products', {
                 url: '/products',

@@ -9,7 +9,7 @@ var cors = require('cors');
 var productsCtrl = require('./server/controllers/productsCtrl');
 var userCtrl = require('./server/controllers/usersCtrl');
 var orderCtrl = require('./server/controllers/orderCtrl');
-var cartCtrl = require('./server/controllers/cartCtrl');
+// var cartCtrl = require('./server/controllers/cartCtrl');
 
 /** Services */
 var passport = require('./server/services/passport');
@@ -63,8 +63,8 @@ app.delete('/api/user/:id', userCtrl.deleteUser);
 app.post('/api/order', orderCtrl.createOrder);
 app.get('/api/order', orderCtrl.readOrder);
 /** Cart End Points */
-app.post('/api/cart', cartCtrl.createOrder);
-app.put('/api/cart', cartCtrl.removeFromCart); 
+// app.post('/api/cart', cartCtrl.createOrder);
+// app.put('/api/cart', cartCtrl.removeFromCart); 
 
 /** Connections */
 var nodePort = 3000;

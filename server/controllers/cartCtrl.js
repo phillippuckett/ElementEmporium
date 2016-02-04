@@ -1,4 +1,4 @@
-var Order = require('./../models/order');
+/*var Order = require('./../models/order');
 
 module.exports = {
 
@@ -45,4 +45,4 @@ module.exports = {
             }
         })
     },
-};
+}; */

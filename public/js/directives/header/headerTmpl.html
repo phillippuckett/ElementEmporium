@@ -11,9 +11,9 @@
 </div>
 
 <div id="menu">
-    <a id="menuButton" href="/#/registration" ng-show="">Register</a>
-    <a id="menuButton" href="/#/login" ng-show="">Login</a>
-    <a id="menuButton" href="/#/account" ng-show="">Account</a>
-    <a id="menuButton" href="/#/cart" ng-show="">Cart</a>
-    <a id="menuButton" href="/api/logout" ng-show="">Logout</a>
+    <a id="menuButton" ng-click="toggle()" href="/#/registration">Register</a>
+    <a id="menuButton" ng-click="toggle()" href="/#/login">Login</a>
+    <a id="menuButton" ng-click="toggle()" href="/#/account">Account</a>
+    <a id="menuButton" ng-click="toggle()" href="/api/logout">Logout</a>
+    <!--<a id="menuButton" ng-click="toggle()" href="/#/cart">Cart</a>-->
 </div>

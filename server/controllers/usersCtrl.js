@@ -1,11 +1,22 @@
-var User = require('./../models/usersModel');
+var User = require('./../models/users');
 
 module.exports = {
     /** C */
-    createUser: function (req, res, next) {
-        new User(req.body).save(function (err, createUser) {
-            if (err) { res.status(500).send(err); }
-            else { res.send(createUser); }
+    // createUser: function (req, res, next) {
+    //     new User(req.body).save(function (err, createUser) {
+    //         if (err) { res.status(500).send(err); }
+    //         else { res.send(createUser); }
+    //     })
+    // },
+    /** https://github.com/dallincrane/example-local-auth */
+    register: function (req, res, next) {
+        console.log('Creating New User');
+        User.create(req.body, function (err, registerUser) {
+            if (err) {
+                console.error(err);
+                return res.status(500).json(err);
+            }
+            res.status(200).json(registerUser);
         })
     },
     /** R */
@@ -15,13 +26,26 @@ module.exports = {
             else { res.status(200).send(readUser); }
         })
     },
-    /** U */
-    updateUser: function (req, res, next) {
-        User.findByIdAndUpdate(req.query.id), { $set: req.body }, function (err, updateUser) {
-            if (err) { res.status(500).send(err); }
-            else { res.send(updateUser); }
-        }
+    /** https://github.com/dallincrane/example-local-auth */
+    currentUser: function (req, res, next) {
+        if (!req.user) return res.status(401).send('current user not defined');
+        req.user.password = null;
+        return res.status(200).json(req.user);
     },
+    /** U */
+    // updateUser: function (req, res, next) {
+    //     User.findByIdAndUpdate(req.query.id), { $set: req.body }, function (err, updateUser) {
+    //         if (err) { res.status(500).send(err); }
+    //         else { res.send(updateUser); }
+    //     }
+    // },
+    /** https://github.com/dallincrane/example-local-auth */
+    updateUser: function (req, res, next) {
+        User.findByIdAndUpdate(req.params._id, req.body, function (err, result) {
+            if (err) next(err);
+            res.status(200).send('user updated');
+        })
+    },   
     /** D */
     deleteUser: function (req, res, next) {
         User.findByIdAndRemove(req.query.id, function (err, deleteUser) {

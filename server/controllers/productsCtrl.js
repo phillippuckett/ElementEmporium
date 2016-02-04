@@ -1,5 +1,4 @@
-
-var Product = require('./../models/productsModel');
+var Product = require('./../models/products');
 
 
 module.exports = {

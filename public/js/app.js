@@ -11,21 +11,11 @@ angular.module('eCommerce', ['ui.router'])
                 url: '/login',
                 templateUrl: 'js/routes/login/loginTmpl.html',
                 controller: 'loginController',
-                onEnter: ['$state', 'auth', function ($state, auth) {
-                    if (auth.isLoggedIn()) {
-                        $state.go('home');
-                    }
-                }]
             })
             .state('registration', {
                 url: '/registration',
                 templateUrl: 'js/routes/registration/registrationTmpl.html',
                 controller: 'registrationController',
-                onEnter: ['$state', 'auth', function ($state, auth) {
-                    if (auth.isLoggedIn()) {
-                        $state.go('home');
-                    }
-                }]
             })
             .state('cart', {
                 url: '/cart',
@@ -35,12 +25,12 @@ angular.module('eCommerce', ['ui.router'])
             .state('account', {
                 url: '/account',
                 templateUrl: 'js/routes/account/accountTmpl.html',
-                controller: 'accountController'
-            })
-            .state('logout', {
-                url: '/logout',
-                templateUrl: 'js/routes/logout/logoutTmpl.html',
-                controller: 'logoutController'
+                controller: 'accountController',
+                // onEnter: ['$state', 'auth', function ($state, auth) {
+                //     if (auth.isLoggedIn()) {
+                //         $state.go('login');
+                //     }
+                // }]
             })
             .state('products', {
                 url: '/products',

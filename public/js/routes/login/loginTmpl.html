@@ -1,9 +1,17 @@
+<!--<script type="text/ng-template" id="/login.html">-->
 <div id="loginView">
-    <div id="login">
-        <input type="text" class="loginInput" placeholder="Username">
-        <br>
-        <input type="text" class="loginInput" placeholder="Password">
-        <br>
-        <button class="loginSubmit" type="loginSubmit">Submit</button>
+    <div ng-show="error" class="alert alert-danger row">
+        <span>{{ error.message }}</span>
     </div>
+
+    <form ng-submit="logIn()">
+        <div id="login">
+            <input type="text" class="loginInput" placeholder="Username" g-model="user.username">
+            <br>
+            <input type="password" class="loginInput" placeholder="Password" ng-model="user.password">
+            <br>
+            <button class="loginSubmit" type="submit">Log In</button>
+        </div>
+    </form>
 </div>
+<!--</script>-->

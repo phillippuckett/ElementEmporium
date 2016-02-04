@@ -10,12 +10,22 @@ angular.module('eCommerce', ['ui.router'])
             .state('login', {
                 url: '/login',
                 templateUrl: 'js/routes/login/loginTmpl.html',
-                controller: 'loginController'
+                controller: 'loginController',
+                onEnter: ['$state', 'auth', function ($state, auth) {
+                    if (auth.isLoggedIn()) {
+                        $state.go('home');
+                    }
+                }]
             })
             .state('registration', {
                 url: '/registration',
                 templateUrl: 'js/routes/registration/registrationTmpl.html',
-                controller: 'registrationController'
+                controller: 'registrationController',
+                onEnter: ['$state', 'auth', function ($state, auth) {
+                    if (auth.isLoggedIn()) {
+                        $state.go('home');
+                    }
+                }]
             })
             .state('cart', {
                 url: '/cart',

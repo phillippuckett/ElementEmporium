@@ -4,15 +4,14 @@ var router = express.Router();
 var jwt = require('express-jwt');
 var passport = require('passport');
 
-/* GET home page. */
-router.get('/', function (req, res) {
+/** GET home page. */
+router.get('/home', function (req, res) {
     res.render('index', { title: 'Express' });
 });
 
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
 var auth = jwt({ secret: 'SECRET', userProperty: 'payload' });
-[4:01]
 
 /** creates a user given a username and password */
 router.post('/register', function (req, res, next) {

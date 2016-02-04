@@ -12,10 +12,10 @@ angular.module('eCommerce', ['ui.router'])
                 templateUrl: 'js/routes/login/loginTmpl.html',
                 controller: 'loginController'
             })
-            .state('signUp', {
-                url: '/signUp',
-                templateUrl: 'js/routes/signUp/signUpTmpl.html',
-                controller: 'signUpController'
+            .state('registration', {
+                url: '/registration',
+                templateUrl: 'js/routes/registration/registrationTmpl.html',
+                controller: 'registrationController'
             })
             .state('cart', {
                 url: '/cart',
@@ -34,8 +34,18 @@ angular.module('eCommerce', ['ui.router'])
             })
             .state('products', {
                 url: '/products',
-                templateUrl: 'js/routes/product/productTmpl.html',
-                controller: 'productController'
+                templateUrl: 'js/routes/products/productsTmpl.html',
+                controller: 'productsController'
             })
-        $urlRouterProvider.otherwise('/home');
+            .state('orders', {
+                url: '/orders',
+                templateUrl: 'js/routes/orders/orderTmpl.html',
+                controller: 'orderController'
+            })
+            .state('inventory', {
+                url: '/inventory',
+                templateUrl: 'js/routes/inventory/inventoryTmpl.html',
+                controller: 'inventoryController'
+            })
+        $urlRouterProvider.otherwise('home');
     });

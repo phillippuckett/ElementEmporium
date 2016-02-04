@@ -1,7 +1,6 @@
 {
   "name": "database",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +11,20 @@
     "body-parser": "^1.14.2",
     "cors": "^2.7.1",
     "express": "^4.13.3",
-    "mongoose": "^4.3.6"
-  }
+    "express-jwt": "^3.3.0",
+    "jsonwebtoken": "^5.5.4",
+    "mongoose": "^4.3.6",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillippuckett88/ecommerce-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phillippuckett88/ecommerce-project/issues"
+  },
+  "homepage": "https://github.com/phillippuckett88/ecommerce-project#readme",
+  "description": ""
 }

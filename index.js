@@ -2,6 +2,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var passport = require('passport');
 var cors = require('cors');
 
 /** Application */
@@ -9,6 +10,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(cors());
+app.use(passport.initialize());
 
 /** Controllers */
 var productsCtrl = require('./server/controllers/productsCtrl');
@@ -31,7 +33,7 @@ app.post('/api/order', orderCtrl.createOrder);
 app.get('/api/order', orderCtrl.readOrder);
 /** Cart End Points */
 app.post('/api/cart', cartCtrl.createOrder);
-app.put('/api/cart', cartCtrl.removeFromCart);    
+app.put('/api/cart', cartCtrl.removeFromCart); 
 
 /** Ports and Channels */
 var nodePort = 3000;

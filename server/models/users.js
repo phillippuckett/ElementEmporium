@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
 // var jwt = require('jsonwebtoken');
 var Schema = mongoose.Schema;
-    
+
 /** Schema Object */
 var UserSchema = new Schema({
     username: { type: String },
@@ -27,5 +27,3 @@ UserSchema.methods.verifyPassword = function (reqBodyPassword) {
 
 /** The model for the schema above*/
 module.exports = mongoose.model('User', UserSchema);
-
-/* https://thinkster.io/mean-stack-tutorial#adding-authentication-via-passport */

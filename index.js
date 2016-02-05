@@ -46,7 +46,6 @@ app.post('/api/login', function (req, res, next) {
 /** Log Out */
 app.get('/api/logout', function (req, res, next) {
     req.logout();
-    // return res.status(200).send('Successfully Logged Out, but good luck getting past this! Mwahahaha...');
     return res.redirect('/#/home');
 });
 

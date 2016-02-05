@@ -7,17 +7,25 @@ angular.module('eCommerce')
         auth.isLoggedIn = function () {
             return $http.get('/api/currentUser')
         };
-
+        
+        /** Register */
         auth.register = function (user) {
             return $http({
                 method: 'POST',
                 url: '/api/register',
                 data: user
             }).then(function (data) {
+                console.log(data);
+                if (data) {
+                    loggedIn = true;
+                    notifyObserver();
+                }
+                $state.go('account');
                 return data.data;
             })
         };
-
+        
+        /** Log In */
         auth.login = function (user) {
             console.log('SENDING: ', user);
             return $http.post('/api/login', user).then(function (data) {
@@ -29,7 +37,8 @@ angular.module('eCommerce')
                 $state.go('account');
             })
         };
-
+        
+        /** Log Out */
         auth.logout = function () {
             return $http({
                 method: 'GET',
@@ -39,23 +48,14 @@ angular.module('eCommerce')
                 $state.go('home');
             });
         };
-
+        
+        /** Toggle */
         auth.isLoggedIn = function () {
             return loggedIn;
         }
-
         var notifyObserver;
- 
-        // LOGINTOGGLE
         auth.subscribe = function (callback) {
             notifyObserver = callback;
-        }
-
-
-
-
+        };
         return auth;
-
-
-
     }]);

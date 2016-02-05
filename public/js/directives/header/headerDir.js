@@ -6,7 +6,7 @@ angular.module('eCommerce')
             controller: function ($scope, auth) {
                 console.log("Header");
                 
-                // LOGINTOGGLE
+                /** Toggle */
                 auth.subscribe(function() {
                     console.log('header logged in');
                     $scope.loggedIn = true;

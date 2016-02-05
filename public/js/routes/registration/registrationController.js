@@ -9,8 +9,8 @@ angular.module('eCommerce')
                     if(err.data.code === 11000) {
                         alert('User already exists');
                     }
-                    $scope.error = err; 
+                    $scope.error = err;
                 })
-                .then(function () { $state.go('account'); });
+                // .then(function () { $state.go('account'); });
         };
     }]);

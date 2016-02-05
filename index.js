@@ -34,16 +34,19 @@ app.use(session({ secret: config.SESSION_SECRET }));
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+/** Log In */
 app.post('/api/login', function (req, res, next) {
     console.log('RUNNING LOGIN');
     next();
 },
     passport.authenticate('local'), function (req, res) {
-        res.send();
+        res.send(req.user.username);
     });
+/** Log Out */
 app.get('/api/logout', function (req, res, next) {
     req.logout();
-    // return res.status(200).send('Successfully Logged Out');
+    // return res.status(200).send('Successfully Logged Out, but good luck getting past this! Mwahahaha...');
     return res.redirect('/#/home');
 });
 
@@ -71,7 +74,7 @@ app.listen(nodePort, function () {
     console.log('Running nodemon://localhost:' + nodePort);
 });
 
-var mongoURI = 'mongodb://localhost:27017'
+var mongoURI = 'mongodb://localhost:27017/products'
 mongoose.connect(mongoURI);
 mongoose.connection.once('open', function (err) {
     if (err) { throw err; }

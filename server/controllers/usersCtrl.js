@@ -1,14 +1,7 @@
 var User = require('./../models/users');
 
 module.exports = {
-    /** C */
-    // createUser: function (req, res, next) {
-    //     new User(req.body).save(function (err, createUser) {
-    //         if (err) { res.status(500).send(err); }
-    //         else { res.send(createUser); }
-    //     })
-    // },
-    /** https://github.com/dallincrane/example-local-auth */
+    /** C *//** https://github.com/dallincrane/example-local-auth */
     register: function (req, res, next) {
         console.log('Creating New User');
         User.create(req.body, function (err, registerUser) {
@@ -33,13 +26,6 @@ module.exports = {
         return res.status(200).json(req.user);
     },
     /** U */
-    // updateUser: function (req, res, next) {
-    //     User.findByIdAndUpdate(req.query.id), { $set: req.body }, function (err, updateUser) {
-    //         if (err) { res.status(500).send(err); }
-    //         else { res.send(updateUser); }
-    //     }
-    // },
-    /** https://github.com/dallincrane/example-local-auth */
     updateUser: function (req, res, next) {
         User.findByIdAndUpdate(req.params._id, req.body, function (err, result) {
             if (err) next(err);

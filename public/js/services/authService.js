@@ -2,6 +2,7 @@
 angular.module('eCommerce')
     .factory('auth', ['$state', '$http', '$window', function ($state, $http, $window) {
         var auth = {};
+        var loggedIn = false;
 
         auth.isLoggedIn = function () {
             return $http.get('/api/currentUser')
@@ -15,16 +16,16 @@ angular.module('eCommerce')
             }).then(function (data) {
                 return data.data;
             })
-            // .then(function (user) {
-            //     return $http.post('/api/login', user).then(function (data) {
-            //         $state.go('account');
-            //     })
-            // })
         };
 
         auth.login = function (user) {
             console.log('SENDING: ', user);
             return $http.post('/api/login', user).then(function (data) {
+                console.log(data);
+                if (data) {
+                    loggedIn = true;
+                    notifyObserver();
+                }
                 $state.go('account');
             })
         };
@@ -34,9 +35,27 @@ angular.module('eCommerce')
                 method: 'GET',
                 url: '/api/logout'
             }).then(function () {
-                $state.go('home');
                 console.log('logged out');
+                $state.go('home');
             });
         };
+
+        auth.isLoggedIn = function () {
+            return loggedIn;
+        }
+
+        var notifyObserver;
+ 
+        // LOGINTOGGLE
+        auth.subscribe = function (callback) {
+            notifyObserver = callback;
+        }
+
+
+
+
         return auth;
+
+
+
     }]);

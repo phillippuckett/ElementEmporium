@@ -4,7 +4,6 @@ angular.module('eCommerce')
         $scope.user = {};
         $scope.login = function () {
             auth.login($scope.user).then(function () {
-                console.log('Login Submitted');
                 $state.go('account');
             }).catch(function(err) {
                 if(err.status === 401) {

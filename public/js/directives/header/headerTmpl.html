@@ -11,9 +11,10 @@
 </div>
 
 <div id="menu">
-    <a id="menuButton" onclick="toggle()" href="/#/registration">Register</a>
-    <a id="menuButton" onclick="toggle()" href="/#/login">Login</a>
-    <a id="menuButton" href="/#/account">Account</a>
-    <a id="menuButton" href="/api/logout">Logout</a>
+    <a id="menuButton" ng-hide="loggedIn" href="/#/registration">Register</a>
+    <a id="menuButton" ng-hide="loggedIn" href="/#/login">Login</a>
+    
+    <a id="menuButton" ng-show="loggedIn" href="/#/account">Account</a>
+    <a id="menuButton" ng-show="loggedIn" href="/api/logout">Logout</a>
     <!--<a id="menuButton" href="/#/cart">Cart</a>-->
 </div>

@@ -1,5 +1,5 @@
 .accountView {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     background-color: lightgrey;
     text-align: center;
     height: 550px;
@@ -7,8 +7,7 @@
 }
 
 .profile {
-    /*border: 1px solid black;*/
-    /*background-color: white;*/
+    border: 1px solid black;
     text-align: left;
     height: 200px;
     min-width: 200px; width: 98%;

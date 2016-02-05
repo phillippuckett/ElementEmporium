@@ -34,18 +34,17 @@ app.use(session({ secret: config.SESSION_SECRET }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-
-// app.post('/users', userCtrl.register);
-// app.get('/me', isAuthed, userCtrl.me);
-// app.put('/users/:_id', isAuthed, userCtrl.updateUser);
-app.post('/api/login', function (req, res, next) { console.log('RUNNING LOGIN'); next(); }, passport.authenticate('local'), function (req, res) {
-    res.send();
-});
+app.post('/api/login', function (req, res, next) {
+    console.log('RUNNING LOGIN');
+    next();
+},
+    passport.authenticate('local'), function (req, res) {
+        res.send();
+    });
 app.get('/api/logout', function (req, res, next) {
     req.logout();
-    // return res.status(200).send('logged out');
-    return res.redirect('/#/home')
+    // return res.status(200).send('Successfully Logged Out');
+    return res.redirect('/#/home');
 });
 
 /** Product End Points */

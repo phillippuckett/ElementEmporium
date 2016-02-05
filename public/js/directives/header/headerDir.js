@@ -10,11 +10,10 @@ angular.module('eCommerce')
                 }
                 /** if login = false, ng-show the buttons login, register. */
                 /** if login = true, ng-show the buttons logout, account, cart. */
-                $scope.login = false;
-                $scope.toggle = function () {
-                    $scope.login = !$scope.login;
-                    console.log("Toggled");
-                }
-            },
+                var loggedIn = false;
+                var toggle = function () {
+                    loggedIn = !loggedIn;
+                };// toggle();
+            }
         }
     });

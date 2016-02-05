@@ -7,6 +7,7 @@ angular.module('eCommerce', ['ui.router'])
                 templateUrl: 'js/routes/home/homeTmpl.html',
                 controller: 'homeController'
             })
+        /** Not Logged In */
             .state('login', {
                 url: '/login',
                 templateUrl: 'js/routes/login/loginTmpl.html',
@@ -17,16 +18,18 @@ angular.module('eCommerce', ['ui.router'])
                 templateUrl: 'js/routes/registration/registrationTmpl.html',
                 controller: 'registrationController',
             })
-            /*.state('cart', {
-                url: '/cart',
-                templateUrl: 'js/routes/cart/cartTmpl.html',
-                controller: 'cartController'
-            })*/
+        /** Logged In */
             .state('account', {
                 url: '/account',
                 templateUrl: 'js/routes/account/accountTmpl.html',
                 controller: 'accountController',
             })
+        /*.state('cart', {
+            url: '/cart',
+            templateUrl: 'js/routes/cart/cartTmpl.html',
+            controller: 'cartController'
+        })*/
+        /** Hidden Routes */
             .state('products', {
                 url: '/products',
                 templateUrl: 'js/routes/products/productsTmpl.html',

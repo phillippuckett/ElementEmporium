@@ -15,19 +15,24 @@ angular.module('eCommerce')
             }).then(function (data) {
                 return data.data;
             })
+            // .then(function (user) {
+            //     return $http.post('/api/login', user).then(function (data) {
+            //         $state.go('account');
+            //     })
+            // })
         };
 
         auth.login = function (user) {
             console.log('SENDING: ', user);
             return $http.post('/api/login', user).then(function (data) {
-               $state.go('account');
+                $state.go('account');
             })
         };
-        
+
         auth.logout = function () {
             return $http({
                 method: 'GET',
-                url:'/api/logout'
+                url: '/api/logout'
             }).then(function () {
                 $state.go('home');
                 console.log('logged out');

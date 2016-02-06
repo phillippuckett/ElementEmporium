@@ -72,7 +72,7 @@ app.listen(nodePort, function () {
     console.log('Running nodemon://localhost:' + nodePort);
 });
 
-var mongoURI = 'mongodb://localhost:27017/products'
+var mongoURI = 'mongodb://localhost:27017/eCommerce'
 mongoose.connect(mongoURI);
 mongoose.connection.once('open', function (err) {
     if (err) { throw err; }

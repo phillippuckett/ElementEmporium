@@ -34,7 +34,6 @@ app.use(session({ secret: config.SESSION_SECRET }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-
 /** Log In */
 app.post('/api/login', function (req, res, next) {
     console.log('RUNNING LOGIN');

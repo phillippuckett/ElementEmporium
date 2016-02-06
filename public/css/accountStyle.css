@@ -9,7 +9,7 @@
 .profile {
     border: 1px solid black;
     text-align: left;
-    height: 200px;
+    min-height: 200px; height: 97.5%;
     min-width: 200px; width: 98%;
     padding: .5%;
     margin: 0 0 .5% 0;
@@ -17,49 +17,45 @@
 }
 
 .information {
-    /*border: 1px solid darkgrey;*/
+    border: 1px solid darkgrey;
     background-color: white;
     text-align: left;
-    height: 175px;
+    height: 95%;
     min-width: 150px; width: 100%;
     padding: .5%;
     margin: .5%;    
 }
-.information p{
-    text-align: left;
-    font-size: 15px;
-    color: grey;
-}
+.information p{ text-align: left; font-size: 25px; margin: 10% 0; color: grey; }
 
-.recentViews {
+/*.recentViews {
     overflow-y: auto;
     height: 300px;
-}
+} */
 
-.recentViewsA {
-    /*border: 1px solid darkgrey;*/
+/*.recentViewsA {
+    border: 1px solid darkgrey;
     background-color: white;
     text-align: left;
     height: 200px;
     min-width: 200px; width: 98%;
     padding: .5%;
     margin: 0 0 .5% 0;
-}
-.recentViewsB {
-    /*border: 1px solid darkgrey;*/
+}*/
+/*.recentViewsB {
+    border: 1px solid darkgrey; 
     background-color: white;
     text-align: left;
     height: 200px;
     min-width: 200px; width: 98%;
     padding: .5%;
     margin: 0 0 .5% 0;    
-}
-.recentViewsC {
-    /*border: 1px solid darkgrey;*/
+}*/
+/*.recentViewsC {
+    border: 1px solid darkgrey;
     background-color: white;    
     text-align: left;
     height: 200px;
     min-width: 200px; width: 98%;
     padding: .5%;
     margin: 0 0 .5% 0;    
-}
+}*/

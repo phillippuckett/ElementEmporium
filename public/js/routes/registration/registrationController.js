@@ -11,6 +11,5 @@ angular.module('eCommerce')
                     }
                     $scope.error = err;
                 })
-                // .then(function () { $state.go('account'); });
         };
     }]);

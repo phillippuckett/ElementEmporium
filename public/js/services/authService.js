@@ -20,7 +20,7 @@ angular.module('eCommerce')
                     loggedIn = true;
                     notifyObserver();
                 }
-                $state.go('account');
+                $state.go('home');
                 return data.data;
             })
         };
@@ -34,7 +34,7 @@ angular.module('eCommerce')
                     loggedIn = true;
                     notifyObserver();
                 }
-                $state.go('account');
+                $state.go('home');
             })
         };
         

@@ -4,9 +4,11 @@ module.exports = {
     /** C *//** https://github.com/dallincrane/example-local-auth */
     register: function (req, res, next) {
         console.log('Creating New User');
+        
         User.create(req.body, function (err, registerUser) {
             if (err) {
                 console.error(err);
+                console.log('user exists');
                 return res.status(500).json(err);
             }
             res.status(200).json(registerUser);

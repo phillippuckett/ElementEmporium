@@ -1,0 +1,11 @@
+1) Register's 'unique' not working
+
+2) Link Product Icon to Product data
+
+3) Input Product's into Product data
+
+4) Link User's info to Account View
+
+5) Link Social Media Icons
+
+6) Order Menu Checkout

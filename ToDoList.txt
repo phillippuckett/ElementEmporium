@@ -1,7 +1,7 @@
 Necessities:
 -   link product icon to product data
 -   input product's into product data
--   link user's info to account view
+-   link user's info to account view, make sure usersmodel has the info 
 -   order menu checkout
 
 Black Diamonds:

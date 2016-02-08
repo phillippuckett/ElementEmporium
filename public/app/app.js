@@ -4,40 +4,40 @@ angular.module('eCommerce', ['ui.router'])
         $stateProvider
             .state('home', {
                 url: '/home',
-                templateUrl: 'js/routes/home/homeTmpl.html',
+                templateUrl: 'app/routes/homeView.html',
                 controller: 'homeController'
             })
         /** Not Logged In */
             .state('login', {
                 url: '/login',
-                templateUrl: 'js/routes/login/loginTmpl.html',
+                templateUrl: 'app/routes/loginView.html',
                 controller: 'loginController',
             })
             .state('registration', {
                 url: '/registration',
-                templateUrl: 'js/routes/registration/registrationTmpl.html',
+                templateUrl: 'app/routes/registrationView.html',
                 controller: 'registrationController',
             })
         /** Logged In */
             .state('account', {
                 url: '/account',
-                templateUrl: 'js/routes/account/accountTmpl.html',
+                templateUrl: 'app/routes/accountView.html',
                 controller: 'accountController',
             })
         /*.state('cart', {
             url: '/cart',
-            templateUrl: 'js/routes/cart/cartTmpl.html',
+            templateUrl: 'app/routes/cartView.html',
             controller: 'cartController'
         })*/
         /** Hidden Routes */
             .state('orders', {
                 url: '/orders',
-                templateUrl: 'js/routes/orders/orderTmpl.html',
+                templateUrl: 'app/routes/orderView.html',
                 controller: 'orderController'
             })
             .state('inventory', {
                 url: '/inventory',
-                templateUrl: 'js/routes/inventory/inventoryTmpl.html',
+                templateUrl: 'app/routes/inventoryView.html',
                 controller: 'inventoryController'
             })
         $urlRouterProvider.otherwise('home');

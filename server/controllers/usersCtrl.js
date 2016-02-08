@@ -1,3 +1,6 @@
+/** User *//** User *//** User *//** User *//** User *//** User */
+/** User *//** User *//** User *//** User *//** User *//** User */
+/** User *//** User *//** User *//** User *//** User *//** User */
 var User = require('./../models/users');
 
 module.exports = {

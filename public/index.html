@@ -6,19 +6,11 @@
     <title>eCommerce</title>
     <!--Styles-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/footerStyle.css">
-    <link rel="stylesheet" href="css/headerStyle.css">
-    <link rel="stylesheet" href="css/homeStyle.css">
-    <link rel="stylesheet" href="css/loginStyle.css">
-    <!--<link rel="stylesheet" href="css/cartStyle.css">-->
-    <link rel="stylesheet" href="css/accountStyle.css">
-    <link rel="stylesheet" href="css/logoutStyle.css">
-    <link rel="stylesheet" href="css/registrationStyle.css">
-    <link rel="stylesheet" href="css/orderStyle.css">
-    <link rel="stylesheet" href="css/inventoryStyle.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body ng-controller="productHunter">
+<body model="">
     <!--Header-->
     <header-dir></header-dir>
 
@@ -34,23 +26,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
     <!--Scripts-->
-    <script src="js/app.js"></script>
-    <script src="js/routes/home/homeController.js"></script>
-    <script src="js/routes/login/loginController.js"></script>
-    <!--<script src="js/routes/cart/cartController.js"></script>-->
-    <script src="js/routes/account/accountController.js"></script>
-    <script src="js/routes/registration/registrationController.js"></script>
-    <script src="js/routes/products/productHunter.js"></script>
-    <script src="js/routes/products/productsController.js"></script>
-    <script src="js/routes/orders/orderController.js"></script>
-    <script src="js/routes/inventory/inventoryController.js"></script>
-
-    <script src="js/directives/header/headerDir.js"></script>
-    <script src="js/directives/footer/footerDir.js"></script>
-
-
-    <script src="js/services/productService.js"></script>
-    <script src="js/services/authService.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes/controllers.js"></script>
+    <script src="app/directives/directives.js"></script>
+    <script src="app/services.js"></script>
 </body>
 
 </html>

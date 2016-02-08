@@ -1,10 +1,10 @@
-/** Authentication */
+/** Authentication Service */
 angular.module('eCommerce')
     .factory('auth', ['$state', '$http', '$window', function ($state, $http, $window) {
         var auth = {};
         var loggedIn = false;
 
-        auth.isLoggedIn = function () {
+        auth.getCurrentUser = function () {
             return $http.get('/api/currentUser')
         };
         
@@ -58,4 +58,16 @@ angular.module('eCommerce')
             notifyObserver = callback;
         };
         return auth;
-    }]);
+    }]); 
+    
+/** Product Service */
+angular.module('eCommerce')
+    .service('productService', function ($http, $q) {
+        this.searchProduct = function (productName) {
+            $http.get('/api/product?title=' + productName).then(function (product) {
+                console.log(product);
+            });
+        }
+    }); 
+   
+/** Cart Service */    

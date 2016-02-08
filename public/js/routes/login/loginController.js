@@ -7,7 +7,7 @@ angular.module('eCommerce')
                 $state.go('home');
             }).catch(function(err) {
                 if(err.status === 401) {
-                    alert('wrong');
+                    alert('Invalid Login');
                 } else {
                     console.error(err);
                 }

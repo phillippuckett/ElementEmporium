@@ -5,5 +5,6 @@ Necessities:
 -   order menu checkout
 
 Black Diamonds:
+-   fix registration "account may already exist" bug
 -   add cart
 -   link socialmedia icons

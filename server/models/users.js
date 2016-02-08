@@ -1,12 +1,12 @@
 /** These 'Require's are necessary for to set up the schema*/
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
-// var jwt = require('jsonwebtoken');
 var Schema = mongoose.Schema;
 
 /** Schema Object */
 var UserSchema = new Schema({
     username: { type: String, required: true, unique: true },
+    // emailAddress: { type: String, required: true, unique: true },
     password: { type: String, required: true }
 });
 

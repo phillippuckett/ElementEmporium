@@ -1,7 +1,7 @@
 /** User *//** User *//** User *//** User *//** User *//** User */
 /** User *//** User *//** User *//** User *//** User *//** User */
 /** User *//** User *//** User *//** User *//** User *//** User */
-var User = require('./../models/users');
+var User = require('./../models/user');
 
 module.exports = {
     /** C *//** https://github.com/dallincrane/example-local-auth */

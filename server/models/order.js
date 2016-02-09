@@ -1,7 +1,11 @@
+/** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS */
+/** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS */
+/** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS *//** ORDERS */
+
 /** These 'Require's are necessary for to set up the schema*/
 var mongoose = require('mongoose');
 // var Cart = require('./CartSchema');
-var Product = require('./products');
+var Product = require('./product');
 var Schema = mongoose.Schema;
 
 /** Schema Object */

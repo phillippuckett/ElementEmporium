@@ -6,8 +6,8 @@ var mongoose = require('mongoose');
 var cors = require('cors');
 
 /** Controllers */
-var productsCtrl = require('./server/controllers/productsCtrl');
-var userCtrl = require('./server/controllers/usersCtrl');
+var productCtrl = require('./server/controllers/productCtrl');
+var userCtrl = require('./server/controllers/userCtrl');
 var orderCtrl = require('./server/controllers/orderCtrl');
 // var cartCtrl = require('./server/controllers/cartCtrl');
 
@@ -49,10 +49,10 @@ app.get('/api/logout', function (req, res, next) {
 });
 
 /** Product End Points */
-app.post('/api/product', function (req, res, next) { console.log('RUNNING'); next(); }, productsCtrl.createProduct);
-app.get('/api/product', productsCtrl.readProduct);
-app.put('/api/product', productsCtrl.updateProduct);
-app.delete('/api/product/:id', productsCtrl.deleteProduct);
+app.post('/api/product', function (req, res, next) { console.log('RUNNING'); next(); }, productCtrl.createProduct);
+app.get('/api/product', productCtrl.readProduct);
+app.put('/api/product', productCtrl.updateProduct);
+app.delete('/api/product/:id', productCtrl.deleteProduct);
 /** User End Points */
 app.post('/api/register', userCtrl.register);
 app.get('/api/user', userCtrl.readUser);

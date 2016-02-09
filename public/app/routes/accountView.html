@@ -1,21 +1,29 @@
 <div id="accountView" class="accountView" controller="accountController">
     <div class="profile">
         <div class="information">
-            <p>{{username}}</p> 
-            <p>{{email}}</p>
+            Username
+            <p> {{user.username}}</p> 
+            Email
+            <p>{{user.emailAddress}}</p>
+            Phone
+            <p>{{user.phoneNumber}}</p>
+            
         </div>
         <div class="information">
-            <p>{{apt}}</p>
-            <p>{{street}}</p>
-            <p>{{city}}</p>
-            <p>{{state}}</p>
-            <p>{{zip}}</p>
-            <p>{{country}}</p>
+            Billing Address
+            <p>{{user.resident}}</p>
+            <p>{{user.street}}</p>
+            <p>{{user.city}}</p>
+            <p>{{user.state}}</p>
+            <p>{{user.zip}}</p>
+            <p>{{user.country}}</p>
         </div>
         <div class="information">
+            Card Information
             <p>{{cardHolder}}</p>
-            <p>xxxx xxxx xxxx {{lastFourdigitsOfCard}}</p>
+            <p>xxxx xxxx xxxx {{cardNumber}}</p>
             <p>exp: {{mm}}/{{yyyy}}</p>
+            <p>securityCode</p>
             <p>{{cardCompany}}</p>
         </div>
     </div>

@@ -1,3 +1,7 @@
+/** CART *//** CART *//** CART *//** CART *//** CART *//** CART */
+/** CART *//** CART *//** CART *//** CART *//** CART *//** CART */
+/** CART *//** CART *//** CART *//** CART *//** CART *//** CART */
+
 /** This 'Require' is necessary for to set up the schema*/
 // var mongoose = require('mongoose');
 // var Schema = mongoose.Schema;
@@ -5,7 +9,7 @@
 /** Schema Object*/
 // var CartSchema = new Schema({
 //     quanity: { type: Number, min: 1, required: true },
-//     products: [
+//     product: [
 //         { type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true },
 //     ]
 // })

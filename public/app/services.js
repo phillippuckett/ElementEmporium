@@ -20,7 +20,7 @@ angular.module('eCommerce')
                     loggedIn = true;
                     notifyObserver();
                 }
-                $state.go('home');
+                $state.go('login');
                 return data.data;
             })
         };

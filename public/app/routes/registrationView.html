@@ -1,17 +1,32 @@
 <div id="registrationView">
-    <div ng-show="error">
-        <span>{{ error.message }}</span>
-    </div>
+    <div ng-show="error"><span>{{ error.message }}</span></div>
 
     <form ng-submit="register()">
-        <div id="registration">
+        <div id="registration"> Profile Information
             <input id="registrationInput" type="text" placeholder="Create Username" ng-model="user.username" required>
-            <br>
-            <!--<input id="registrationInput" type="text" placeholder="Email Address (Optional)" ng-model="user.emailAddress">
-            <br>-->
-            <input id="registrationInput" type="password" placeholder="Create Password" ng-model="user.password" required>
-            <br>
-            <button id="registrationSubmit" ng-click="toggle();" type="submit">Create Account</button>
+            <input id="registrationInput" type="text" placeholder="emailAddress@email.com" ng-model="user.emailAddress">
+            <input id="registrationInput" type="text" placeholder="Phone Number" ng-model="user.phoneNumber">
         </div>
+
+        <div id="registration"> Billing Information
+            <input id="registrationInput" type="text" placeholder="Apt, Suite, etc" ng-model="user.resident">
+            <input id="registrationInput" type="text" placeholder="Street Address" ng-model="user.street">
+            <input id="registrationInput" type="text" placeholder="City" ng-model="user.city">
+            <input id="registrationInput" type="text" placeholder="State" ng-model="user.state">
+            <input id="registrationInput" type="text" placeholder="Zip" ng-model="user.zip">
+            <input id="registrationInput" type="text" placeholder="Country" ng-model="user.country">
+        </div>
+
+        <div id="registration"> Card Information
+            <input id="registrationInput" type="text" placeholder="Card Name" ng-model="cardHolder">
+            <input id="registrationInput" type="text" placeholder="xxxx xxxx xxxx xxxx" ng-model="user.cardNumber">
+            <input id="registrationInput" type="text" placeholder="MM" ng-model="user.mm">
+            <input id="registrationInput" type="text" placeholder="YYYY" ng-model="user.yyyy">
+            <input id="registrationInput" type="text" placeholder="Security Code" ng-model="user.securityCode">
+            <input id="registrationInput" type="text" placeholder="Card Company" ng-model="user.cardCompany">
+        </div>
+        <input id="registrationInput" type="password" placeholder="Create Password" ng-model="user.password" required>
+        <br>
+        <button id="registrationSubmit" ng-click="toggle();" type="submit">Create Account</button>
     </form>
 </div>

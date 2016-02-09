@@ -30,8 +30,8 @@ angular.module('eCommerce', ['ui.router'])
             controller: 'cartController'
         })*/
         /** Hidden Routes */
-            .state('orders', {
-                url: '/orders',
+            .state('order', {
+                url: '/order',
                 templateUrl: 'app/routes/orderView.html',
                 controller: 'orderController'
             })

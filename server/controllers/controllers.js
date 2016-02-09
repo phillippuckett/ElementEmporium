@@ -1,60 +1,58 @@
-/** Cart *//** Cart *//** Cart *//** Cart *//** Cart *//** Cart */
-/** Cart *//** Cart *//** Cart *//** Cart *//** Cart *//** Cart */
-/** Cart *//** Cart *//** Cart *//** Cart *//** Cart *//** Cart */
-/*var Order = require('./../models/order');
+// /** Cart *//** Cart *//** Cart *//** Cart *//** Cart *//** Cart */
+// /** Cart *//** Cart *//** Cart *//** Cart *//** Cart *//** Cart */
+// /** Cart *//** Cart *//** Cart *//** Cart *//** Cart *//** Cart */
+// /*var Order = require('./../models/order');
 
-module.exports = {
+// module.exports = {
 
-    addToCart: function (req, res, next) {
-        Order.create(req.body, function (err, addToCart) {
-            if (err) { res.status(500).send(err); }
-            else {
-                Order.cart.push(req.query.productId);
-                Order.save(function () {
-                    Order.findById(req.params.userId).populate('cart')
-                        .exec(function (err, addToCart) {
-                            res.status(200).send(addToCart.cart);
-                        })
-                })
-            }
-        })
-    },
+//     addToCart: function (req, res, next) {
+//         Order.create(req.body, function (err, addToCart) {
+//             if (err) { res.status(500).send(err); }
+//             else {
+//                 Order.cart.push(req.query.productId);
+//                 Order.save(function () {
+//                     Order.findById(req.params.userId).populate('cart')
+//                         .exec(function (err, addToCart) {
+//                             res.status(200).send(addToCart.cart);
+//                         })
+//                 })
+//             }
+//         })
+//     },
 
-    createOrder: function (req, res, next) {
-        Order.create(req.body, function (err, createOrder) {
-            if (err) { res.status(500).send(err); }
-            else { res.status(200).send(createOrder); }
-        })
-    },
+//     createOrder: function (req, res, next) {
+//         Order.create(req.body, function (err, createOrder) {
+//             if (err) { res.status(500).send(err); }
+//             else { res.status(200).send(createOrder); }
+//         })
+//     },
 
-    removeFromCart: function (req, res, next) {
-        Order.findById(req.params.userId, function (err, removeFromCart) {
-            if (err) { res.status(500).send(err); }
-            else {
-                for (var i = User.cart.length - 1; i >= 0; i--) {
-                    var currentProduct = User.cart[i];
-                    if (currentProduct == req.query.productId) {
-                        User.cart.splice(i, 1);
-                        break;
-                    }
-                }
-                User.save(function () {
-                    User.findById(req.params.userId).populate('cart')
-                        .exec(function (err, user) {
-                            if (err) { res.status(500).send(err); }
-                            else { res.status(200).send(user.cart); }
-                        })
-                })
-            }
-        })
-    },
-}; */
+//     removeFromCart: function (req, res, next) {
+//         Order.findById(req.params.userId, function (err, removeFromCart) {
+//             if (err) { res.status(500).send(err); }
+//             else {
+//                 for (var i = User.cart.length - 1; i >= 0; i--) {
+//                     var currentProduct = User.cart[i];
+//                     if (currentProduct == req.query.productId) {
+//                         User.cart.splice(i, 1);
+//                         break;
+//                     }
+//                 }
+//                 User.save(function () {
+//                     User.findById(req.params.userId).populate('cart')
+//                         .exec(function (err, user) {
+//                             if (err) { res.status(500).send(err); }
+//                             else { res.status(200).send(user.cart); }
+//                         })
+//                 })
+//             }
+//         })
+//     },
+// }; */
 
-
-
-/** Order *//** Order *//** Order *//** Order *//** Order *//** Order */
-/** Order *//** Order *//** Order *//** Order *//** Order *//** Order */
-/** Order *//** Order *//** Order *//** Order *//** Order *//** Order */
+// /** Order *//** Order *//** Order *//** Order *//** Order *//** Order */
+// /** Order *//** Order *//** Order *//** Order *//** Order *//** Order */
+// /** Order *//** Order *//** Order *//** Order *//** Order *//** Order */
 // var Order = require('./../models/order');
 
 // module.exports = {
@@ -74,10 +72,10 @@ module.exports = {
 //     },
 // };
 
-/** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
-/** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
-/** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
-// var Product = require('./../models/products');
+// /** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
+// /** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
+// /** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
+// var Product = require('./../models/product');
 
 
 // module.exports = {
@@ -112,16 +110,16 @@ module.exports = {
 //     }
 // };
 
-/** User *//** User *//** User *//** User *//** User *//** User */
-/** User *//** User *//** User *//** User *//** User *//** User */
-/** User *//** User *//** User *//** User *//** User *//** User */
-// var User = require('./../models/users');
+// /** User *//** User *//** User *//** User *//** User *//** User */
+// /** User *//** User *//** User *//** User *//** User *//** User */
+// /** User *//** User *//** User *//** User *//** User *//** User */
+// var User = require('./../models/user');
 
 // module.exports = {
 //     /** C *//** https://github.com/dallincrane/example-local-auth */
 //     register: function (req, res, next) {
 //         console.log('Creating New User');
-        
+
 //         User.create(req.body, function (err, registerUser) {
 //             if (err) {
 //                 console.error(err);

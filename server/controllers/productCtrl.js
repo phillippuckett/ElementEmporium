@@ -1,7 +1,7 @@
 /** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
 /** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
 /** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
-var Product = require('./../models/products');
+var Product = require('./../models/product');
 
 
 module.exports = {

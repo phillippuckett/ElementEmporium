@@ -327,19 +327,25 @@ i.fa {display: inline;}
 }
 
 #registration {
-    border: 1px solid black;    
+    border: 1px solid black;
+    text-align: center;
+    min-height: 50px; height: 97.5%;
+    min-width: 200px; width: 98%;
     padding: .5%;
-    margin: 2.5%;
+    margin: 0 0 .5% 0;
+    display: inline-flex; 
 }
 
 #registrationInput { 
-    border: 1px solid grey;    
-    border-radius: 5px;
+    border: 1px solid grey; 
+    background-color: white;  
+    text-align: left; 
     font-size: 15px;
-    height: 20px;
-    width: 25%;
+    height: 95%;
+    min-width: 150px; width: 100%;
     padding: .5%;
-    margin: 2.5%;
+    margin: .5%;
+    border-radius: 5px;
 }
 
 #registrationSubmit { 

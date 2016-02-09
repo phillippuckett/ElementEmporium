@@ -1,3 +1,6 @@
+/** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS */
+/** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS */
+/** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS */
 /** This 'Require' is necessary for to set up the schema*/
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
@@ -18,3 +21,4 @@ var ProductSchema = new Schema({
 
 /** The model for the schema above*/
 module.exports = mongoose.model('Product', ProductSchema);
+

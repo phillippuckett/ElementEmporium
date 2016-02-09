@@ -1,35 +1,31 @@
-<div id="accountView" class="accountView" controller="accountController">
+<div id="accountView" controller="accountController">
     <div class="profile">
         <div class="information">
             Username
-            <p> {{user.username}}</p> 
+            <p> {{user.username}}</p>
             Email
             <p>{{user.emailAddress}}</p>
             Phone
             <p>{{user.phoneNumber}}</p>
-            
+
         </div>
         <div class="information">
             Billing Address
             <p>{{user.resident}}</p>
             <p>{{user.street}}</p>
-            <p>{{user.city}}</p>
-            <p>{{user.state}}</p>
-            <p>{{user.zip}}</p>
-            <p>{{user.country}}</p>
+            <p>{{user.city}}, {{user.state}}</p>
+            <p>{{user.zip}} {{user.country}}</p>
         </div>
         <div class="information">
             Card Information
-            <p>{{cardHolder}}</p>
-            <p>xxxx xxxx xxxx {{cardNumber}}</p>
-            <p>exp: {{mm}}/{{yyyy}}</p>
-            <p>securityCode</p>
-            <p>{{cardCompany}}</p>
+            <p>{{user.cardName}}</p>
+            <p>xxxx xxxx xxxx {{user.cardNumber}}</p>
+            <p>Exp: {{user.mm}}/{{user.yyyy}} Security Code: {{user.securityCode}}</p>
+            <p>{{user.cardCompany}}</p>
         </div>
     </div>
-    <!--<div class="recentViews">
-        <div class="recentViewsA"></div>
-        <div class="recentViewsB"></div>
-        <div class="recentViewsC"></div>
-    </div>-->
+    <div id="accountMenu">
+        <a id="menuAccountButton" ng-show="loggedIn" href="/#/account">Update Account</a>
+        <a id="menuAccountButton" ng-show="loggedIn" href="/#/account">Delete Account</a>
+    </div>
 </div>

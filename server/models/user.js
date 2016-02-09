@@ -10,8 +10,8 @@ var Schema = mongoose.Schema;
 var UserSchema = new Schema({
     username: { type: String, required: true, unique: true },
     emailAddress: { type: String, required: true, unique: true },
-    phoneNumber: { type: String },
-
+    phoneNumber: { type: String }, 
+      
     resident: { type: String },
     street: { type: String, required: true },
     city: { type: String, required: true },
@@ -19,14 +19,13 @@ var UserSchema = new Schema({
     zip: { type: String, required: true },
     country: { type: String, required: true },
     
-    cardHolder: {type: String, required: true},
-    lastFourdigitsOfCard: {type: String, required: true},
+    cardName: {type: String, required: true },
+    cardNumber: {type: String, required: true},
     mm: {type: String, required: true},
     yyyy: {type: String, required: true},
-    securityCode: { type: Number, required: true },
+    securityCode: { type: String, required: true },
     cardCompany: {type: String, required: true},
-    
-    password: { type: String, required: true },
+    password: { type: String, required: true }
 });
 
 UserSchema.pre('save', function (next) {

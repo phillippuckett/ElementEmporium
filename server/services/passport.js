@@ -7,7 +7,7 @@ passport.use(new LocalStrategy({
     usernameField: 'username',
     passwordField: 'password'
 }, function (username, password, done) {
-    console.log('Loggin In');
+    console.log('Logging In');
     User.findOne({ username: username })
         .exec(function (err, user) {
             if (err) done(err);

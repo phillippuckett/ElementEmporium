@@ -14,11 +14,11 @@ angular
         $scope.zip = '';
         $scope.country = '';
 
-        $scope.cardHolder = '';
-        $scope.lastFourdigitsOfCard = '';
+        // $scope.cardName = '';
+        $scope.cardNumber = '';
         $scope.mm = '';
         $scope.yyyy = '';
-        Scope.securityCode = '';
+        $scope.securityCode = '';
         $scope.cardCompany = '';
         
         console.log(auth);

@@ -1,9 +1,9 @@
 Necessities:
 -   link product icon to product data
 -   input product's into product data
--   link user's info to account view, make sure usermodel has the info 
 -   order menu checkout
 
 Black Diamonds:
 -   add cart
 -   link socialmedia icons
+-   functional update button and delete button

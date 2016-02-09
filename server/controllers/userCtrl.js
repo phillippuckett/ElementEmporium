@@ -11,7 +11,7 @@ module.exports = {
         User.create(req.body, function (err, registerUser) {
             if (err) {
                 console.error(err);
-                console.log('user exists');
+                console.log('Existing User');
                 return res.status(500).json(err);
             }
             res.status(200).json(registerUser);

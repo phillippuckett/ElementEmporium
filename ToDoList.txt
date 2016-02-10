@@ -1,9 +1,33 @@
 Necessities:
--   link product icon to product data
--   input product's into product data
 -   order menu checkout
+-   inventory
+-   search bar that actually searchs
 
 Black Diamonds:
 -   add cart
 -   link socialmedia icons
 -   functional update button and delete button
+-   product quantity adjustment
+
+
+
+
+
+
+/** ng-repeat walkthrough */
+/* inside the view: */
+make sure that you have an ng-repeat="X in Xs"
+that can utilize the X template
+('class' repeats with ng-repeat, 'id' doesn't)
+link the view into the controller with '{{ }}'
+
+/* inside the view controller: */
+        xService.getX().then(function (result) {
+            console.log(result);
+            // we're setting the result that came back from xService to $scope.Xs (in the ng-repeat)
+            $scope.Xs = result;
+        })
+        
+/* inside postman: */
+copy the wanted fields in the 'X' object, 
+and start editing items to post to the database

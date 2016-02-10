@@ -66,8 +66,15 @@ angular.module('eCommerce')
         this.searchProduct = function (productName) {
             $http.get('/api/product?title=' + productName).then(function (product) {
                 console.log(product);
-            });
-        }
+            })
+        };
+        this.getProduct = function () {
+            return $http.get('/api/product').then(function (getProResult) {
+                console.log(getProResult);
+                return getProResult.data;
+            })
+        };
     }); 
    
 /** Cart Service */    
+/* Currently Inactive */

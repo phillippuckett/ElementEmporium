@@ -1,54 +1,17 @@
 <div id="productView" ng-controller="productHunter">
 
-    <div id="productBox">
-        <div id="productPhoto"></div>
-        <div id="productInfo">
-            <div id="p">
-                <p>Name {{name}}</p>
-                <p>Edition {{edition}}</p>
-                <p>Price {{price}}</p>
-                <p>ID {{_id}}</p>
+    <div class="productBox" ng-repeat="product in products">
+        <div class="productPhoto"><img class="image" src="{{product.image}}"></div>
+        <div class="productInfo">
+            <div class="p">
+                <p>{{product.title}}</p>
+                <p>{{product.description}}</p>
+                <p>{{product.quantity}} Atom</p>
+                <p>VIN# {{product._id}}</p>
+                <p>${{product.price}}</p>
+                <!--<p>Reviews: {{reviews}}</p>-->
             </div>
-            <a id="purchaseButton" href="/#/order">PURCHASE</a>
-        </div>
-    </div>
-
-    <div id="productBox">
-        <div id="productPhoto"></div>
-        <div id="productInfo">
-            <div id="p">
-                <p>Name</p>
-                <p>Edition</p>
-                <p>Price</p>
-                <p>ID</p>
-            </div>
-            <a id="purchaseButton" href="/#/order">PURCHASE</a>
-        </div>
-    </div>
-    
-        <div id="productBox">
-        <div id="productPhoto"></div>
-        <div id="productInfo">
-            <div id="p">
-                <p>Name</p>
-                <p>Edition</p>
-                <p>Price</p>
-                <p>ID</p>
-            </div>
-            <a id="purchaseButton" href="/#/order">PURCHASE</a>
-        </div>
-    </div>
-    
-        <div id="productBox">
-        <div id="productPhoto"></div>
-        <div id="productInfo">
-            <div id="p">
-                <p>Name</p>
-                <p>Edition</p>
-                <p>Price</p>
-                <p>ID</p>
-            </div>
-            <a id="purchaseButton" href="/#/order">PURCHASE</a>
+            <a class="purchaseButton" href="/#/order">Buy {{product.title}}</a>
         </div>
     </div>
 

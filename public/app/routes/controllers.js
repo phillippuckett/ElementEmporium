@@ -39,8 +39,13 @@ angular
 /** Home */
 angular
     .module('eCommerce')
-    .controller('homeController', function ($scope) {
+    .controller('homeController', function ($scope, productService) {
         console.log("Home View");
+        productService.getProduct().then(function (result) {
+            console.log(result);
+            // we're setting the result that came back from the product service to $scope.products (the ng-repeat)
+            $scope.products = result;
+        })
     });
     
 /** Inventory */
@@ -84,9 +89,9 @@ angular
             console.log(productName);
             productService.searchProduct(productName);
         }
-    });  
+    });
      
-/** Product */
+/** Product *//** the scrapped 'productView' */
 // angular
 //    .module('eCommerce')
 //    .controller('productController', function ($scope, productService) {

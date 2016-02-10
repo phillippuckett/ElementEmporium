@@ -1,20 +1,20 @@
 <div id="header">
     <div id="homeIcon">
-        <a href="/#/home">ECOMMERCE</a>
+        <a href="/#/home">STARDUST</a>
     </div>
     <div id="search">
         <form ng-submit="productSearch(productName)">
-            <button id="submit" type="submit">Search</button>
+            <button id="submit" type="submit">SEARCH</button>
             <input id="searchInput" type="search" ng-model="productName" placeholder="abc" required>
         </form>
     </div>
 </div>
 
 <div id="menu">
-    <a id="menuButton" ng-hide="loggedIn" href="/#/registration">Register</a>
-    <a id="menuButton" ng-hide="loggedIn" href="/#/login">Login</a>
+    <a id="menuButton" ng-hide="loggedIn" href="/#/registration">REGISTER</a>
+    <a id="menuButton" ng-hide="loggedIn" href="/#/login">LOGIN</a>
     
-    <a id="menuButton" ng-show="loggedIn" href="/#/account">Account</a>
-    <a id="menuButton" ng-show="loggedIn" href="/api/logout">Logout</a>
+    <a id="menuButton" ng-show="loggedIn" href="/#/account">ACCOUNT</a>
+    <a id="menuButton" ng-show="loggedIn" href="/api/logout">LOGOUT</a>
     <!--<a id="menuButton" href="/#/cart">Cart</a>-->
 </div>

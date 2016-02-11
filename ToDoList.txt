@@ -1,14 +1,16 @@
 Necessities:
+X   link user data to the order menu
 -   order menu checkout
--   inventory
--   search bar that actually searchs
+-   search bar that actually conducts a search
+-   fix the toggle/refresh issue
 
 Black Diamonds:
--   cookies
+-   inventory
 -   add cart
--   link socialmedia icons
--   functional update button and delete button
+-   cookies
 -   product quantity adjustment
+-   functional update button and delete button
+-   link socialmedia icons
 
 
 

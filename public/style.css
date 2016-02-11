@@ -99,18 +99,10 @@ i.fa { display: inline; }
     padding: .5%; }
 .productPhoto {
     /*border: 1px solid black;  */
-    background-color: black;
+    /*background-color: black;*/
     height: 300px; 
     width: 300px; 
     margin: .5%; 
-    -webkit-box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1);
-    -moz-box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1);
-    box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1); }
-.image {
-    /*border: 1px solid red;*/
-    background-color: black;
-    height: 300px; 
-    width: 300px; 
     -webkit-box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1);
     -moz-box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1);
     box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,1); }
@@ -173,40 +165,39 @@ i.fa { display: inline; }
     color: darkgrey; text-align: center;
     min-height: 525px; min-width: 200px; width: 98%; 
     padding: .5%; margin: 0 0 .5% 0; }
-.profile { 
+.profile { /*border: 1px solid black;*/
     min-width: 200px; width: 98%; margin: .5%; }
 .information { 
     border: 1px solid lightgrey; background-color: white; padding: .5%; margin: .5%;
     font-size: 20px; text-align: left;  
     min-width: 150px; width: 100%; min-height: 150px; }
 .information p { 
-    border: 1px solid lightgrey; margin: 5% 0; 
+    /*border: 1px solid lightgrey;*/ margin: 5% 0; 
     text-align: left; font-size: 20px; color: grey; }
     
 .orderMenu { 
-    /*border: 1px solid black;*/ /*background-color: yellow;*/ height: 30px; 
-    padding: .75%;
-    font-family: 'Righteous', cursive; color: white; font-size: 15px; }
-
-.menuButton:link { margin: 0 5%;
+    /*border: 1px solid lightgrey;*/ background-color: white; padding: .5%; margin: .5%;
+    font-size: 20px; text-align: center;  
+    min-width: 150px; width: 100%; min-height: 50px; }
+.menuButton:link { 
     border: 1px solid mediumslateblue; border-radius: 5px; background-color: darkslateblue; padding: .75%;
     color: white; text-decoration: none; font-size: 20px; padding: .75%; }
-.menuButton:visited { margin: 0 5%;
+.menuButton:visited { 
     border: 1px solid mediumslateblue; border-radius: 5px; background-color: darkslateblue;
     color: white; text-decoration: none; padding: .75%; }
-.menuButton:hover { margin: 0 5%;
+.menuButton:hover { 
     border: 1px solid mediumslateblue; border-radius: 5px; background-color: midnightblue;
     color: white; text-decoration: none; padding: .75%; }
 
-.orderButton:link { margin: 0 5%;
+.orderButton:link { 
     border: 1px solid coral; border-radius: 5px; background-color: orangered; 
     color: white; text-decoration: none; font-size: 20px; padding: .75%; 
     }
-.orderButton:visited { margin: 0 5%;
+.orderButton:visited {
     border: 1px solid coral; border-radius: 5px; background-color: orangered; 
     color: white; text-decoration: none; padding: .75%; 
     }
-.orderButton:hover { margin: 0 5%;
+.orderButton:hover { 
     border: 1px solid lightcoral; border-radius: 5px; background-color: red; 
     color: white; text-decoration: none; padding: .75%; 
     }

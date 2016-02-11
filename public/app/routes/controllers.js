@@ -2,7 +2,7 @@
 // angular
 //     .module('eCommerce')
 //     .controller('accountController', function ($scope, user, auth) {
-//         console.log("Account View");
+//         console.log("Account View");               
 //         $scope.user = user;  
 //         // console.log(auth);
 //         auth.getCurrentUser().then(function (result) {
@@ -62,12 +62,12 @@ angular
     .controller('orderController', function ($scope, user, auth) {
         console.log('Order View');
         $scope.user = user;  
-        // console.log(auth);
+        console.log(auth);
         auth.getCurrentUser().then(function (result) {
-            console.log(result);
             $scope.user = result.data; // connects data with the orderView
+            console.log(result.data);
         });
-    }); 
+    });  
     
 /** Product Hunter */
 angular

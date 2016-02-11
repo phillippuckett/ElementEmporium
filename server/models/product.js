@@ -11,7 +11,7 @@ var ProductSchema = new Schema({
     description: { type: String, required: true },
     quantity: { type: Number, min: 1, required: true },
     price: { type: Number, required: true, min: 0 },
-    image: { type: String, required: true }
+    image: { type: String, required: true },
     // reviews: [{
     //     reviewer: { type: String },
     //     rating: { type: Number },

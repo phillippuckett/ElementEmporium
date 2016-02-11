@@ -4,6 +4,7 @@ Necessities:
 -   search bar that actually searchs
 
 Black Diamonds:
+-   cookies
 -   add cart
 -   link socialmedia icons
 -   functional update button and delete button

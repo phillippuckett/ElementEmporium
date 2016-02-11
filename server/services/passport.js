@@ -1,8 +1,11 @@
+/** Dependencies */
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
+/** User Model Plugged In */
 var User = require('../models/user');
 
+/** Passport */
 passport.use(new LocalStrategy({
     usernameField: 'username',
     passwordField: 'password'

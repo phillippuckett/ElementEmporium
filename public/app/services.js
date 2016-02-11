@@ -26,6 +26,8 @@ angular.module('eCommerce')
         };
         
         /** Log In */
+        // var localStorageKey = 'sessionKey';
+        
         auth.login = function (user) {
             console.log('SENDING: ', user);
             return $http.post('/api/login', user).then(function (data) {

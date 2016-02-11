@@ -5,9 +5,8 @@ angular.module('eCommerce', ['ui.router'])
             .state('home', {
                 url: '/home',
                 templateUrl: 'app/routes/homeView.html',
-                controller: 'homeController'
+                controller: 'homeController',
             })
-        /** Not Logged In */
             .state('login', {
                 url: '/login',
                 templateUrl: 'app/routes/loginView.html',
@@ -18,27 +17,50 @@ angular.module('eCommerce', ['ui.router'])
                 templateUrl: 'app/routes/registrationView.html',
                 controller: 'registrationController',
             })
-        /** Logged In */
-            .state('account', {
-                url: '/account',
-                templateUrl: 'app/routes/accountView.html',
-                controller: 'accountController',
-            })
-        /*.state('cart', {
-            url: '/cart',
-            templateUrl: 'app/routes/cartView.html',
-            controller: 'cartController'
-        })*/
-        /** Hidden Routes */
             .state('order', {
                 url: '/order',
                 templateUrl: 'app/routes/orderView.html',
-                controller: 'orderController'
-            })
+                controller: 'orderController',
+                resolve: {
+                    user: function (auth, $state) {
+                        return auth.getCurrentUser().then(function (response) {
+                            if (response.status != 200) {
+                                $state.go('login')
+                            }
+                            return response.data;
+                        })
+                    }
+                }
+            })            
+        /*.state('cart', {
+            url: '/cart',
+            templateUrl: 'app/routes/cartView.html',
+            controller: 'cartController',
+            resolve: {
+                user: function (auth, $state) {
+                    return auth.getCurrentUser().then(function (response) {
+                        if (response.status != 200) {
+                            $state.go('login')
+                        }
+                        return response.data;
+                    })
+                }
+            }
+        })*/
             .state('inventory', {
                 url: '/inventory',
                 templateUrl: 'app/routes/inventoryView.html',
-                controller: 'inventoryController'
+                controller: 'inventoryController',
+                resolve: {
+                    user: function (auth, $state) {
+                        return auth.getCurrentUser().then(function (response) {
+                            if (response.status != 200) {
+                                $state.go('login')
+                            }
+                            return response.data;
+                        })
+                    }
+                }
             })
         $urlRouterProvider.otherwise('home');
     });

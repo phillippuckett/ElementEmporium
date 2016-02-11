@@ -1,33 +1,15 @@
 /** Account */
-angular
-    .module('eCommerce')
-    .controller('accountController', function ($scope, auth) {
-        console.log("Account View");
-
-        $scope.username = '';
-        $scope.emailAddress = '';
-
-        $scope.resident = '';
-        $scope.street = '';
-        $scope.city = '';
-        $scope.state = '';
-        $scope.zip = '';
-        $scope.country = '';
-
-        // $scope.cardName = '';
-        $scope.cardNumber = '';
-        $scope.mm = '';
-        $scope.yyyy = '';
-        $scope.securityCode = '';
-        $scope.cardCompany = '';
-        
-        console.log(auth);
-
-        auth.getCurrentUser().then(function (result) {
-            console.log(result);
-            $scope.user = result.data; // connects data with the accountView
-        });
-    });   
+// angular
+//     .module('eCommerce')
+//     .controller('accountController', function ($scope, user, auth) {
+//         console.log("Account View");
+//         $scope.user = user;  
+//         // console.log(auth);
+//         auth.getCurrentUser().then(function (result) {
+//             console.log(result);
+//             $scope.user = result.data; // connects data with the accountView
+//         });
+//     });   
     
 /** Cart */
 /*angular
@@ -77,9 +59,15 @@ angular
 /** Order */
 angular
     .module('eCommerce')
-    .controller('orderController', function ($scope) {
+    .controller('orderController', function ($scope, user, auth) {
         console.log('Order View');
-    });
+        $scope.user = user;  
+        // console.log(auth);
+        auth.getCurrentUser().then(function (result) {
+            console.log(result);
+            $scope.user = result.data; // connects data with the orderView
+        });
+    }); 
     
 /** Product Hunter */
 angular

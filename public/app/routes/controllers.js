@@ -1,48 +1,47 @@
-/** Account */
-// angular
-//     .module('eCommerce')
-//     .controller('accountController', function ($scope, user, auth) {
-//         console.log("Account View");               
-//         $scope.user = user;  
-//         // console.log(auth);
-//         auth.getCurrentUser().then(function (result) {
-//             console.log(result);
-//             $scope.user = result.data; // connects data with the accountView
-//         });
-//     });   
-    
-/** Cart */
-/*angular
-    .module('eCommerce')
-    .controller('cartController', function ($scope) {
-        console.log("Cart View");
-    });*/  
-     
 /** Home */
 angular
     .module('eCommerce')
-    .controller('homeController', function ($scope, productService) {
+    .controller('homeController', function ($scope, productService, orderService, auth) {
         console.log("Home View");
         productService.getProduct().then(function (result) {
             console.log(result);
             // we're setting the result that came back from the product service to $scope.products (the ng-repeat)
             $scope.products = result;
         })
+        
+        //did they already have an open order, how would we check?
+        orderService.getUnfinishedOrder(auth.getCurrentUser()).then(function (resultOrder) {
+            console.log(resultOrder);
+            if (resultOrder.length === 0) {
+                orderService.createOrder(auth.getCurrentUser()).then(function (newOrder) {
+                    console.log(newOrder)
+                    $scope.orderId = newOrder._id;
+                    // this holds the new id that came back                    
+                })
+            } else {
+                $scope.orderId = resultOrder[0]._id;
+            }
+        });
+        $scope.addToOrder = function (id) {
+
+        }
     });
-    
-/** Inventory */
-angular
-    .module('eCommerce')
-    .controller('inventoryController', function ($scope) {
-        console.log('Inventory View');
-    });
-    
+       
 /** Login */
 angular
     .module('eCommerce')
     .controller('loginController', ['$scope', '$state', 'auth', function ($scope, $state, auth) {
         console.log("Login View");
+        
         $scope.user = {};
+        
+        //remove when real
+        $scope.user = {
+            username: 'phillippuckett88',
+            password: 'phillippuckett88'
+        }
+       
+      
         $scope.login = function () {
             auth.login($scope.user).then(function () {
                 $state.go('home');
@@ -62,11 +61,13 @@ angular
     .controller('orderController', function ($scope, user, auth) {
         console.log('Order View');
         $scope.user = user;  
-        console.log(auth);
+        // console.log(auth);
+        console.log(user);
         auth.getCurrentUser().then(function (result) {
             $scope.user = result.data; // connects data with the orderView
-            console.log(result.data);
+            console.log($scope.user);
         });
+
     });  
     
 /** Product Hunter */
@@ -78,13 +79,6 @@ angular
             productService.searchProduct(productName);
         }
     });
-     
-/** Product *//** the scrapped 'productView' */
-// angular
-//    .module('eCommerce')
-//    .controller('productController', function ($scope, productService) {
-//             console.log('Product View');
-//     });
 
 /** Registration */
 angular

@@ -4,15 +4,15 @@
 
 /** These 'Require's are necessary for to set up the schema*/
 var mongoose = require('mongoose');
-// var Cart = require('./CartSchema');
 var Product = require('./product');
 var Schema = mongoose.Schema;
 
 /** Schema Object */
 var OrderSchema = new Schema({
-    user: { type: String, required: true },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     placed: { type: Date, default: Date.now },
-    product: [Product]
+    product: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
+    fulfilled: {type: Boolean, default: false }
 })
 
 /** The model for the schema above*/

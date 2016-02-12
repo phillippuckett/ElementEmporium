@@ -40,7 +40,7 @@ app.post('/api/login', function (req, res, next) {
     next();
 },
     passport.authenticate('local'), function (req, res) {
-        res.send(req.user.username);
+        res.send(req.user._id);
     });
 /** Log Out */
 app.get('/api/logout', function (req, res, next) {
@@ -62,6 +62,7 @@ app.delete('/api/user/:id', userCtrl.deleteUser);
 /** Order End Points */
 app.post('/api/order', orderCtrl.createOrder);
 app.get('/api/order', orderCtrl.readOrder);
+app.get('/api/order/:userId', orderCtrl.getUnfinishedOrder);
 /** Cart End Points */
 // app.post('/api/cart', cartCtrl.createOrder);
 // app.put('/api/cart', cartCtrl.removeFromCart); 

@@ -1,5 +1,5 @@
 <div id="productView" ng-controller="productHunter">
-
+    {{ orderId }}
     <div class="productBox" ng-repeat="product in products">
         <img class="productPhoto" src="{{product.image}}">
         <div class="productInfo">
@@ -11,7 +11,7 @@
                 <p>${{product.price}}</p>
                 <!--<p>Reviews: {{reviews}}</p>-->
             </div>
-            <a class="purchaseButton" href="/#/order">Buy {{product.title}}</a>
+            <a class="purchaseButton" ng-click="addToOrder(product._id)">Buy {{product.title}}</a>
         </div>
     </div>
 

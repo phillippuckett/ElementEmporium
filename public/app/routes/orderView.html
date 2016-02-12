@@ -1,6 +1,7 @@
-<div id="orderView" ng-controller="orderController">
+<div id="orderView">
     <div class="order">
         <div class="profile">
+            
             <div class="information">
                 Profile
                 <p>{{user.name}}</p>
@@ -8,6 +9,7 @@
                 <p>{{user.emailAddress}}</p>
                 <p>{{user.phoneNumber}}</p>
             </div>
+            
             <div class="information">
                 Billing Address
                 <p>{{user.resident}}</p>
@@ -20,6 +22,7 @@
                 <a class="menuButton" href="/#/order">DELETE ACCOUNT</a>
             </div>
         </div>
+        
         <div class="profile">
             <div class="information">
                 Card Information
@@ -29,6 +32,7 @@
                 <p>xxxx xxxx xxxx {{user.cardNumber}} : {{user.securityCode}}</p>
                 <p>Exp: {{user.mm}}/{{user.yyyy}}</p>
             </div>
+            
             <div class="information">
                 Order
                 <p>{{product.title}} : {{product.description}}</p>
@@ -44,3 +48,6 @@
         </div>
     </div>
 </div>
+
+when i click on an item,
+onclick i can do a put request to change the user

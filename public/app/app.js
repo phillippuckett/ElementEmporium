@@ -32,41 +32,5 @@ angular.module('eCommerce', ['ui.router'])
                     }
                 }
             })
-            .state('inventory', {
-                url: '/inventory',
-                templateUrl: 'app/routes/inventoryView.html',
-                controller: 'inventoryController',
-                resolve: {
-                    user: function (auth, $state) {
-                        return auth.getCurrentUser().then(function (response) {
-                            if (response.status != 200) {
-                                $state.go('login')
-                            }
-                            return response.data;
-                        })
-                    }
-                }
-            })
         $urlRouterProvider.otherwise('home');
     });
-    
-        // .state('account', {
-        //     url: '/account',
-        //     templateUrl: 'app/routes/accountView.html',
-        //     controller: 'accountController',
-        //     resolve: {
-        //         user: function (auth, $state) {
-        //             return auth.getCurrentUser().then(function (response) {
-        //                 if (response.status != 200) {
-        //                     $state.go('login')
-        //                 }
-        //                 return response.data;
-        //             })
-        //         }
-        //     }
-        // })
-        // .state('cart', {
-        //     url: '/cart',
-        //     templateUrl: 'app/routes/cartView.html',
-        //     controller: 'cartController'
-        // })

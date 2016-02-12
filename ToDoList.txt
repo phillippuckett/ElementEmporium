@@ -1,12 +1,10 @@
 Necessities:
-X   link user data to the order menu
--   order menu checkout
+-   crte fn(in the proCtrl) tht pshs pdcts nto arr insd of ordr 
 -   search bar that actually conducts a search
 -   fix the toggle/refresh issue
 
 Black Diamonds:
 -   inventory
--   add cart
 -   cookies
 -   product quantity adjustment
 -   functional update button and delete button

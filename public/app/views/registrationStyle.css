@@ -1,4 +1,4 @@
-#registrationView { font-family: 'Eagle Lake', cursive; color: white; text-align: center; font-size: 30px;
+#registrationView { font-family: 'Fondamento', cursive; color: white; text-align: center; font-size: 30px;
     /*border: 1px solid red;   */
     padding: .5%; 
     }
@@ -20,37 +20,34 @@
 box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     border-radius: 30px; /*border: 1px solid grey;*/ background-size: cover;
     background-image: url('/app/images/moonDust.jpg'); background-color: white;
-    text-align: center; color: lightgrey; font-size: 20px; 
+    text-align: center; color: white; font-size: 20px; 
     min-width: 150px; width: 100%;
     padding: .5%;
     margin: .5%; 
     }
-#registrationInput { 
-    border: 1px solid white; 
-    color: midnightblue; 
-    text-align: left;
-    font-size: 20px;
+#registrationInput { color: midnightblue; text-align: left; font-size: 20px;
+    background-image: url('/app/images/cloud.jpg'); background-size: cover; background-repeat: no-repeat; background-color: white;
+    border-radius: 5px; border: 1px solid grey; 
     height: 95%;
     min-width: 200px;
     padding: .5%;
     margin: .5%;
-    border-radius: 5px; 
     }
-#registrationSubmit { color: white; font-size: 20px;
+#registrationSubmit {
     /*border: 1px solid yellow;*/
     width: 98%; 
     margin: auto; 
     padding: .5%;  
     }
-.registrationSubmit { color: white; font-size: 20px;
+.registrationSubmit { font-family: 'Eagle Lake', cursive; color: mediumslateblue; font-size: 20px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px; 
-    min-width: 200px; width: 200px;
+    min-width: 200px;
     margin: 1%; 
     padding: .5%;  
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
     }
-.registrationSubmit:hover { text-decoration: none; 
+.registrationSubmit:hover { text-decoration: none; color: white;
     border: 1px solid darkslateblue; border-radius: 5px;
     background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
     }

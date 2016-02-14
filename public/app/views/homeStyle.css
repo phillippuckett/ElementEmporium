@@ -1,9 +1,7 @@
-.orderId { font-family: 'Eagle Lake', cursive; color: white; font-size: 15px; text-align: center; }
+.orderId { font-family: 'Fondamento', cursive; color: white; font-size: 15px; text-align: center; }
 /*#productView { border: 1px solid yellow; }*/
 .productBox { 
--webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
--moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
+    -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); -moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     border-radius: 30px; /*border: 1px solid grey;*/  background-size: cover;
     background-image: url('/app/images/moonDust.jpg'); background-color: white;
     display: inline-flex; 
@@ -20,19 +18,19 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
     }
-.productInfo { 
+.productInfo { color: white;
     /*border: 1px solid green;*/
     width: 100%;
     height: 250px; 
     margin: .5%;
     padding: .5%; 
     }
-.p { text-align: left; font-size: 100%; color: lightgrey;
+.p { text-align: left; font-size: 105%;
     /*border: 1px solid blue;*/
     height: 200px; 
     overflow-x: auto;  
     }
-.purchaseButton { text-align: center; font-size: 25px; color: white; text-decoration: none; 
+.purchaseButton { font-family: 'Eagle Lake', cursive; text-align: center; font-size: 25px; color: coral; text-decoration: none; 
     border: 1px solid orangered; border-radius: 5px; background-size: cover;
     background-image: url('/app/images/lightOrange.jpg'); background-color: orangered; 
     min-width: 200px; 
@@ -42,7 +40,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
     -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
     }
-.purchaseButton:hover { 
+.purchaseButton:hover { color: white;
     background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
     border: 1px solid darkred; border-radius: 5px;
 }

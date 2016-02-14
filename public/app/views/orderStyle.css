@@ -1,4 +1,4 @@
-#orderView { font-family: 'Eagle Lake', cursive; text-align: center; 
+#orderView { text-align: center; 
     opacity: white .5;
     padding: .75% .75% .75% 1.75%;
     }
@@ -9,12 +9,12 @@
     padding: .5%; 
     margin: 0 0 .5% 0; 
     }
-.profileRow { 
+.profileRow { text-align: center;
     /*border: 1px solid green;*/
     width: 98%;
     display: inline-flex; flex-wrap: wrap;
     }
-.information { font-size: 20px; text-align: left;
+.information { font-family: 'Fondamento', cursive; font-size: 20px; text-align: left;
 -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
 -moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
 box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
@@ -43,7 +43,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     min-width: 150px; width: 100%; 
     min-height: 50px; 
     }
-.orderMenuButton:link { color: white; text-decoration: none; font-size: 20px;
+.orderMenuButton:link { font-family: 'Eagle Lake', cursive; text-decoration: none; font-size: 20px; color: mediumslateblue;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;    
     border: 1px solid mediumslateblue; border-radius: 5px;  
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
@@ -51,7 +51,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
     padding: .75%;
     }
-.orderMenuButton:visited { color: white; text-decoration: none;
+.orderMenuButton:visited { font-family: 'Eagle Lake', cursive; color: mediumslateblue; text-decoration: none;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px;    
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
@@ -59,7 +59,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);  
     padding: .75%;
     }
-.orderMenuButton:hover { color: white; text-decoration: none;
+.orderMenuButton:hover { font-family: 'Eagle Lake', cursive; color: white; text-decoration: none;
     border: 1px solid darkslateblue; border-radius: 5px;
     background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
@@ -67,7 +67,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);      
     padding: .75%;
     }
-.orderFinalizationButton:link { color: white; text-decoration: none; font-size: 20px;
+.orderFinalizationButton:link { font-family: 'Eagle Lake', cursive; color: mediumslateblue; text-decoration: none; font-size: 20px;
     background-image: url('/app/images/lightOrange.jpg'); background-color: orangered;
     border: 1px solid orangered; border-radius: 5px;  
     padding: .75%; 
@@ -76,12 +76,12 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
  
     }
-.orderFinalizationButton:visited { color: white; text-decoration: none;
+.orderFinalizationButton:visited { font-family: 'Eagle Lake', cursive; color: coral; text-decoration: none;
     border: 1px solid orangered; border-radius: 5px;
     background-image: url('/app/images/lightOrange.jpg'); background-color: orangered; 
     padding: .75%;
     }
-.orderFinalizationButton:hover { color: white; text-decoration: none; 
+.orderFinalizationButton:hover { font-family: 'Eagle Lake', cursive; color: white; text-decoration: none; 
     background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
     border: 1px solid darkred; border-radius: 5px; 
     padding: .75%;

@@ -12,8 +12,8 @@
     width: 100%;
     /*display: inline-flex;*/
 }        
-#homeIcon { font-size: 20px; text-align: left; color: mediumslateblue; text-decoration: none;
-    background-image: url('/app/images/avatarKorra.jpg'); background-size: contain;
+#homeIcon { font-size: 20px; text-align: left; color: white; text-decoration: none;
+    background-image: url('/app/images/avatarKorra.jpg'); background-size: contain; background-repeat: no-repeat;
     /*border: 1px solid yellow;*/
     padding: .25%;  
     width: 150px;
@@ -27,7 +27,7 @@
     height: 50px;
     min-width: 500px; width: 100%;
     }
-#submit { font-family: 'Eagle Lake', cursive; color: white; font-size: 20px;
+#submit { font-family: 'Eagle Lake', cursive; color: mediumslateblue; font-size: 15px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px;     
     border-radius: 0 5px 5px 0;
@@ -35,26 +35,27 @@
     width: 100px;  
     float: right; 
     }
-#submit:hover { 
+#submit:hover { color: white;
     border: 1px solid darkslateblue; border-radius: 0 5px 5px 0;
     background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue; 
     }
 #searchInput { color: midnightblue; font-size: 15px;
-    border: 1px solid mediumslateblue;
+    background-image: url('/app/images/cloud.jpg'); background-size: cover; background-repeat: no-repeat; background-color: white;
+    border-radius: 5px; border: 1px solid mediumslateblue;
     float: right;
     border-radius: 5px 0 0 5px;
     min-height: 32.5px; height: 100%; max-height: 52.5px;
     width: 300px;
     float: right; 
     }
-#headerMenu { color: white; font-size: 20px; text-align: right;
+#headerMenu { color: mediumslateblue; font-size: 20px; text-align: right;
     /*border: 1px solid blue;*/
     }
 #headerMenu a:link { color: white; text-decoration: none; 
     border: 1px solid mediumslateblue; border-radius: 5px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue; 
     }  
-#headerMenu a:visited { color: white; text-decoration: none; 
+#headerMenu a:visited { color: mediumslateblue; text-decoration: none; 
     border: 1px solid mediumslateblue; border-radius: 5px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;; 
     }

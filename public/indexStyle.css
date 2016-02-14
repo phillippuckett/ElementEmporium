@@ -1,0 +1,12 @@
+html { 
+    background-color: black; 
+    height: 100%; 
+    width: 100%; }
+body { color: deeppink;
+    -webkit-box-shadow: inset 7.5px -7.5px 300px 200px rgba(0,0,0,1);
+    -moz-box-shadow: inset 7.5px -7.5px 300px 200px rgba(0,0,0,1);
+    box-shadow: inset 7.5px -7.5px 300px 200px rgba(0,0,0,1);   
+    background-image: url('/app/images/dirty.jpg'); 
+    background-color: black;
+    width: 98.5%; 
+    }

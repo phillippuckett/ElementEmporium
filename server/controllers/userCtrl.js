@@ -1,6 +1,3 @@
-/** User *//** User *//** User *//** User *//** User *//** User */
-/** User *//** User *//** User *//** User *//** User *//** User */
-/** User *//** User *//** User *//** User *//** User *//** User */
 var User = require('./../models/user');
 
 module.exports = {
@@ -19,16 +16,17 @@ module.exports = {
     },
     /** R */
     readUser: function (req, res, next) {
-        User.find.populate('cart').exec().then(function (err, readUser) {
+        User.find.populate('order').exec().then(function (err, readUser) {
             if (err) { res.status(500).send(err); }
             else { res.status(200).send(readUser); }
         })
     },
-    /** https://github.com/dallincrane/example-local-auth */
+    
+    /** R *//** https://github.com/dallincrane/example-local-auth */
     currentUser: function (req, res, next) {
-        if (!req.user) return res.status(401).send('current user not defined');
+        if (!req.user) res.status(401).send('current user not defined');
         req.user.password = null;
-        return res.status(200).json(req.user);
+        res.status(200).json(req.user);
     },
     /** U */
     updateUser: function (req, res, next) {

@@ -1,7 +1,3 @@
-/** USERS *//** USERS *//** USERS *//** USERS *//** USERS *//** USERS */
-/** USERS *//** USERS *//** USERS *//** USERS *//** USERS *//** USERS */
-/** USERS *//** USERS *//** USERS *//** USERS *//** USERS *//** USERS */
-/** These 'Require's are necessary for to set up the schema*/
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
 var Schema = mongoose.Schema;

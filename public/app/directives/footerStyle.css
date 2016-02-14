@@ -1,0 +1,73 @@
+.footer { font-family: 'Eagle Lake', cursive; text-align: center; 
+    /*border-top: 2px ridge rgba(100,100,100,1);*/
+    /*border: 1px solid white; border-radius: 5px;*/
+    margin: auto; 
+    }
+.subFooter { text-align: center; color: white; font-size: 20px;
+    /*border: 1px solid deeppink;*/ border-radius: 5px;
+    height: 200px; 
+    min-width: 200px; width: 98%; 
+    padding: .5%; 
+    margin: .5%; 
+    display: inline-flex; 
+    }
+.footerInformation { 
+    /*border: 1px solid green; */
+    text-align: center; 
+    height: 175px; 
+    min-width: 150px; width: 100%; 
+    padding: .5%; 
+    margin: .5%; 
+    }
+.footerInformation p { 
+    /*border: 1px solid yellow; */
+    text-align: center; 
+    font-size: 15px; 
+    color: white; 
+    } 
+
+.socialMedia { text-align: center; 
+    /*border: 1px solid deeppink;*/ 
+    height: 35px;
+    opacity: .5; 
+    padding: .5%; 
+    margin: .5%;
+    }
+i.fa { display: inline; /*border: 1px solid blue;*/ }    
+.fa-facebook-official { color: grey; font-size: 25px; 
+    width: 100%; 
+    margin: 0 5%; 
+    }
+.fa-facebook-official:hover { color: royalblue; text-decoration: none; margin: 0 5%; }
+.fa-twitter { color: white; font-size: 25px; 
+    width: 100%; 
+    margin: 0 5%; 
+    }
+.fa-twitter:hover { color: skyblue; text-decoration: none; margin: 0 5%; }
+.fa-instagram { color: white; font-size: 25px; 
+    width: 100%; 
+    margin: 0 5%; 
+    }
+.fa-instagram:hover { color: tan; text-decoration: none; }
+.fa-vine { color: white; font-size: 25px; 
+    width: 100%; 
+    margin: 0 5%; 
+    }
+.fa-vine:hover { color: springgreen; text-decoration: none; margin: 0 5%; }
+.fa-soundcloud { color: white; font-size: 25px; 
+    width: 100%; 
+    margin: 0 5%; 
+    }
+.fa-soundcloud:hover { color: orangered; text-decoration: none; }
+.fa-linkedin-square { color: white; font-size: 25px; 
+    width: 100%; 
+    margin: 0 5%; 
+    }
+.fa-linkedin-square:hover { color: midnightblue; text-decoration: none; }
+
+.copyright { color: white; font-size: 10px; text-align: center; 
+    /*border: 1px solid red;*/
+    width: 98%;  
+    padding: .5%; 
+    margin: .5%;
+    }    

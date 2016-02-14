@@ -1,8 +1,4 @@
-/** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
-/** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
-/** Product *//** Product *//** Product *//** Product *//** Product *//** Product */
 var Product = require('./../models/product');
-
 
 module.exports = {
     /** C */
@@ -32,6 +28,21 @@ module.exports = {
         Product.findByIdAndRemove(req.query.id, function (err, deleteProduct) {
             if (err) { res.status(500).send(err); }
             else { res.send(deleteProduct); }
+        })
+    },
+    /** Ucart */
+    addToProductCart: function (req, res, next) {
+        Product.create(req.body, function (err, addToProductCart) {
+            if (err) { res.status(500).send(err); }
+            else {
+                Product.cart.push(req.query.productId);
+                Product.save(function () {
+                    Product.findById(req.params.userId).populate('product')
+                        .exec(function (err, addToProductCart) {
+                            res.status(200).send(addToProductCart.product);
+                        })
+                })
+            }
         })
     }
 };

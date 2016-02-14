@@ -3,35 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SpaçeSouk</title>
+    <title>Element Emporium</title>
+
     <!--Styles-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Eagle+Lake' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="indexStyle.css">
+      
+    <link rel="stylesheet" href="app/directives/headerStyle.css">
+    <link rel="stylesheet" href="app/directives/footerStyle.css">
+    
+    <link rel="stylesheet" href="app/views/homeStyle.css">
+    <link rel="stylesheet" href="app/views/loginStyle.css">
+    <link rel="stylesheet" href="app/views/orderStyle.css">
+    <link rel="stylesheet" href="app/views/registrationStyle.css">
+      
+    
 
 </head>
 
 <body>
     <!--Header-->
-    <header-dir></header-dir>
+    <header-directive></header-directive>
 
     <!--Ui-Router-->
     <ui-view></ui-view>
 
     <!--Footer-->
-    <footer-dir></footer-dir>
+    <footer-directive></footer-directive>
 
     <!--Libraries-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
     <!--Scripts-->
     <script src="app/app.js"></script>
-    <script src="app/routes/controllers.js"></script>
-    <script src="app/directives/directives.js"></script>
-    <script src="app/services.js"></script>
+
+    <script src="app/controllers/homeController.js"></script>
+    <script src="app/controllers/loginController.js"></script>
+    <script src="app/controllers/orderController.js"></script>
+    <script src="app/controllers/productController.js"></script>
+    <script src="app/controllers/registrationController.js"></script>
+
+    <script src="app/directives/marginals.js"></script>
+
+    <script src="app/services/authService.js"></script>
+    <script src="app/services/orderService.js"></script>
+    <script src="app/services/productService.js"></script>
 </body>
 
 </html>

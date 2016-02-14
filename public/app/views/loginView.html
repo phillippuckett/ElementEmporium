@@ -1,0 +1,24 @@
+<main id="loginView">
+    Account Log In
+    <br>
+    <div ng-show="error">
+        <span>{{ error.message }}</span>
+    </div>
+
+    <div id="login">
+        <div id="avatarLogo"></div>
+        <form ng-submit="login()">
+            <div class="loginMenu">
+                What is your username ?
+                <br>
+                <input type="text" class="loginInput" placeholder="Username" ng-model="user.username">
+                <br> What is your password ?
+                <br>
+                <input type="password" class="loginInput" placeholder="Password" ng-model="user.password">
+                <br>
+                <button class="loginSubmit" ng-click="toggle();" type="submit">LOG IN</button>
+            </div>
+        </form>
+        <div id="avatarLogo"></div>
+    </div>
+</main>

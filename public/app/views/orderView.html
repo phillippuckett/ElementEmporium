@@ -1,0 +1,47 @@
+<div id="orderView">
+    <div class="order">
+        <div class="profileRow">
+            <div class="information">
+                Profile
+                <p>{{user.name}}</p>
+                <p> {{user.username}}</p>
+                <p>{{user.emailAddress}}</p>
+                <p>{{user.phoneNumber}}</p>
+            </div>
+            <div class="information">
+                Billing Address
+                <p>{{user.resident}}</p>
+                <p>{{user.street}}</p>
+                <p>{{user.city}}, {{user.state}}</p>
+                <p>{{user.zip}} {{user.country}}</p>
+            </div>
+            <div class="information">
+                Card Information Card Information
+                <p>{{user.cardCompany}}</p>
+                <p>{{user.cardName}}</p>
+                <p>xxxx xxxx xxxx {{user.cardNumber}} : {{user.securityCode}}</p>
+                <p>Exp: {{user.mm}}/{{user.yyyy}}</p>
+            </div>
+        </div>
+
+        <div class="profileRow">
+            <div class="orderMenu">
+                <a class="orderMenuButton" href="/#/order">EDIT INFORMATION</a>
+                <a class="orderMenuButton" href="/#/order">DELETE ACCOUNT</a>
+            </div>
+        </div>
+        <div class="profileRow">
+            <div class="orderInfo" ng-repeat="product in orderId.product track by $index">
+                Order
+                <p>{{product.title}} : {{product.description}}</p>
+                <p>{{product.quantity}} Atom</p>
+                <p>${{product.price}} per</p>
+                <p style="text-align: right;"></p>
+            </div>
+        </div>
+        <div class="profileRow">
+            <div class="orderMenu" style="margin-left: 75%; font-size: 30px;"> Total: ${{product.price}}</div>            
+            <a class="orderFinalizationButton" style="margin-left: 87.5%; font-family: 'Eagle Lake', cursive;" href="/#/order">FINALIZE ORDER</a>
+        </div>
+    </div>
+</div>

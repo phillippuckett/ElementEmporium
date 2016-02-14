@@ -1,6 +1,3 @@
-/** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS */
-/** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS */
-/** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS *//** PRODUCTS */
 /** This 'Require' is necessary for to set up the schema*/
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;

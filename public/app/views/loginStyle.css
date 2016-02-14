@@ -1,0 +1,62 @@
+#loginView { font-family: 'Eagle Lake', cursive; color: white; font-size: 30px; text-align: center; 
+    /*border: 1px solid red;*/
+    padding: .5%; 
+    }
+    
+#login {
+    /*border: 1px solid yellow;*/
+    display: inline-flex; 
+    padding: 5%;
+    margin: .5%;
+}
+
+.loginMenu { text-align: center; color: lightgrey; font-size: 20px;
+    /*border: 1px solid green;*/ border-radius: 30px;
+    box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); -moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); 
+    background-image: url('/app/images/moonDust.jpg'); background-size: cover; background-color: white; 
+    min-height: 250px; max-height: 350px;   
+    min-width: 250px; max-width: 350px;
+    padding: 5%;
+    }
+    
+.loginInput { font-size: 20px; color: midnightblue;
+    border: 1px solid lightgrey; 
+    border-radius: 5px;  
+    height: 20px; 
+     margin: 5%;
+    }
+.loginSubmit { color: white; font-size: 20px;
+    background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
+    border: 1px solid mediumslateblue; border-radius: 5px; 
+    min-width: 200px; 
+    padding: 2.5%; 
+    margin: 10%;
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);  
+    }
+.loginSubmit:hover { 
+    border: 1px solid darkslateblue; border-radius: 5px;
+    background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;; 
+    }
+#avatarLogo {
+    /*border: 1px solid white;*/ border-radius: 30px; opacity: .75;
+    box-shadow: 0px 0px 50px 35px rgba(0,0,0,1); -webkit-box-shadow: 0px 0px 50px 35px rgba(0,0,0,1); -moz-box-shadow: 0px 0px 50px 35px rgba(0,0,0,1);
+    background-image: url('/app/images/avatarKorra.jpg'); background-size: contain; background-color: black; background-repeat: no-repeat; background-position: center; 
+    min-width: 250px;max-width: 350px;
+    padding: 5% 5%;
+    }    
+    /*
+    border: 1px solid grey; border-radius: 5px;  
+    background-image: url('/app/images/moonDust.jpg'); background-color: white;
+
+    background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
+    border: 1px solid mediumslateblue; border-radius: 5px;
+
+    border: 1px solid darkslateblue; border-radius: 5px;
+    background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
+    
+    border: 1px solid orange; border-radius: 5px;
+    background-image: url('/app/images/lightOrange.jpg'); background-color: orangered;
+
+    background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
+    border: 1px solid darkred; border-radius: 5px;
+    */

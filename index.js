@@ -9,7 +9,6 @@ var cors = require('cors');
 var productCtrl = require('./server/controllers/productCtrl');
 var userCtrl = require('./server/controllers/userCtrl');
 var orderCtrl = require('./server/controllers/orderCtrl');
-// var cartCtrl = require('./server/controllers/cartCtrl');
 
 /** Services */
 var passport = require('./server/services/passport');
@@ -24,6 +23,7 @@ var app = express();
 var isAuthed = function (req, res, next) {
     if (!req.isAuthenticated()) return res.status(401).send();
     return next();
+    console.log('Function: isAuthed');
 };
 
 /** Application */
@@ -36,22 +36,24 @@ app.use(passport.session());
 
 /** Log In */
 app.post('/api/login', function (req, res, next) {
-    console.log('RUNNING LOGIN');
+    console.log('Running Function: login');
     next();
 },
     passport.authenticate('local'), function (req, res) {
         res.send(req.user._id);
+        console.log('Function: authenticate');
     });
 /** Log Out */
 app.get('/api/logout', function (req, res, next) {
     req.logout();
     return res.redirect('/#/home');
+    console.log('Running Function: logout');
 });
-
 /** Product End Points */
-app.post('/api/product', function (req, res, next) { console.log('RUNNING'); next(); }, productCtrl.createProduct);
+app.post('/api/product', function (req, res, next) { next(); console.log('Running Function: createProduct'); }, productCtrl.createProduct);
 app.get('/api/product', productCtrl.readProduct);
 app.put('/api/product', productCtrl.updateProduct);
+// app.get('/api/product/:productId', productCtrl.currentProductResult);
 app.delete('/api/product/:id', productCtrl.deleteProduct);
 /** User End Points */
 app.post('/api/register', userCtrl.register);
@@ -63,9 +65,7 @@ app.delete('/api/user/:id', userCtrl.deleteUser);
 app.post('/api/order', orderCtrl.createOrder);
 app.get('/api/order', orderCtrl.readOrder);
 app.get('/api/order/:userId', orderCtrl.getUnfinishedOrder);
-/** Cart End Points */
-// app.post('/api/cart', cartCtrl.createOrder);
-// app.put('/api/cart', cartCtrl.removeFromCart); 
+app.put('/api/order/:orderId', orderCtrl.pushProductToOrder);
 
 /** Connections */
 var nodePort = 3000;

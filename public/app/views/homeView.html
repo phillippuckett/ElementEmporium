@@ -1,0 +1,18 @@
+<div class="orderId">{{ orderId }}</div>
+<div id="productView" ng-controller="productController">
+    <div class="productBox" ng-repeat="product in products">
+        <img class="productPhoto" src="{{product.image}}">
+        <div class="productInfo">
+            <div class="p">
+                <p>{{product.title}}</p>
+                <p>{{product.description}}</p>
+                <p>{{product.quantity}} Atom</p>
+                <p>VIN# {{product._id}}</p>
+                <p>${{product.price}}</p>
+                <!--<p>Reviews: {{reviews}}</p>-->
+            </div>
+            <a class="purchaseButton" ng-click="addProductToOrder(product._id)">Add {{product.title}}</a>
+        </div>
+    </div>
+
+</div>

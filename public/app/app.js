@@ -4,31 +4,33 @@ angular.module('eCommerce', ['ui.router'])
         $stateProvider
             .state('home', {
                 url: '/home',
-                templateUrl: 'app/routes/homeView.html',
+                templateUrl: 'app/views/homeView.html',
                 controller: 'homeController',
             })
             .state('login', {
                 url: '/login',
-                templateUrl: 'app/routes/loginView.html',
+                templateUrl: 'app/views/loginView.html',
                 controller: 'loginController',
             })
             .state('registration', {
                 url: '/registration',
-                templateUrl: 'app/routes/registrationView.html',
+                templateUrl: 'app/views/registrationView.html',
                 controller: 'registrationController',
             })
             .state('order', {
                 url: '/order',
-                templateUrl: 'app/routes/orderView.html',
+                templateUrl: 'app/views/orderView.html',
                 controller: 'orderController',
                 resolve: {
-                    user: function (auth, $state) {
-                        return auth.getCurrentUser().then(function (response) {
+                    user: function (authService, $state) {
+                        return authService.getCurrentUserObject().then(function (response) {
                             if (response.status != 200) {
                                 $state.go('login')
                             }
+                            console.log(response);
                             return response.data;
                         })
+                        console.log('Resolve in "order"');
                     }
                 }
             })

@@ -1,19 +1,13 @@
 Necessities:
--   crte fn(in the proCtrl) tht pshs pdcts nto arr insd of ordr 
+-   Counter for like products, to consolidate the many boxes that appear
 -   search bar that actually conducts a search
--   fix the toggle/refresh issue
+-   fix the toggle/refresh/staying logged in issue
 
 Black Diamonds:
--   inventory
--   cookies
 -   product quantity adjustment
+-   inventory
 -   functional update button and delete button
 -   link socialmedia icons
-
-
-
-
-
 
 /** ng-repeat walkthrough */
 /* inside the view: */

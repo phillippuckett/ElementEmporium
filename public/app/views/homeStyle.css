@@ -1,0 +1,65 @@
+.orderId { font-family: 'Eagle Lake', cursive; color: white; font-size: 15px; text-align: center; }
+/*#productView { border: 1px solid yellow; }*/
+.productBox { 
+-webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
+box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
+    border-radius: 30px; /*border: 1px solid grey;*/  background-size: cover;
+    background-image: url('/app/images/moonDust.jpg'); background-color: white;
+    display: inline-flex; 
+    min-width: 500px; width: 30%;
+    padding: .5%; 
+    margin: .75%;
+    }
+.productPhoto { 
+    border: 1px solid lightgrey; border-radius: 5px;
+    height: 200px; 
+    width: 200px; 
+    margin: .5%; 
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
+    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+.productInfo { 
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 250px; 
+    margin: .5%;
+    padding: .5%; 
+    }
+.p { text-align: left; font-size: 100%; color: lightgrey;
+    /*border: 1px solid blue;*/
+    height: 200px; 
+    overflow-x: auto;  
+    }
+.purchaseButton { text-align: center; font-size: 25px; color: white; text-decoration: none; 
+    border: 1px solid orangered; border-radius: 5px; background-size: cover;
+    background-image: url('/app/images/lightOrange.jpg'); background-color: orangered; 
+    min-width: 200px; 
+    float: right; 
+    padding: 2.5%; 
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
+    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
+    }
+.purchaseButton:hover { 
+    background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
+    border: 1px solid darkred; border-radius: 5px;
+}
+
+    /*
+    border: 1px solid grey; border-radius: 5px; background-size: cover; 
+    background-image: url('/app/images/moonDust.jpg'); background-color: white;
+
+    background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
+    border: 1px solid mediumslateblue; border-radius: 5px;background-size: cover;
+
+    border: 1px solid darkslateblue; border-radius: 5px;background-size: cover;
+    background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
+    
+    border: 1px solid orangered; border-radius: 5px;background-size: cover;
+    background-image: url('/app/images/lightOrange.jpg'); background-color: orangered;
+
+    background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
+    border: 1px solid darkred; border-radius: 5px;background-size: cover;
+    */

@@ -4,7 +4,7 @@
     }
 #registration { 
     /*border: 1px solid maroon;*/
-    
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     min-height: 200px; 
     height: 80%;
     min-width: 200px; 
@@ -14,7 +14,7 @@
     display: inline-flex; 
     text-align: left; 
     }
-.registration { 
+.registration { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
 -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
 -moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
 box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
@@ -25,7 +25,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     padding: .5%;
     margin: .5%; 
     }
-#registrationInput { color: midnightblue; text-align: left; font-size: 20px;
+#registrationInput { font-family: 'Fondamento', cursive; color: black; text-align: left; font-size: 20px;
     background-image: url('/app/images/cloud.jpg'); background-size: cover; background-repeat: no-repeat; background-color: white;
     border-radius: 5px; border: 1px solid grey; 
     height: 95%;
@@ -39,7 +39,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     margin: auto; 
     padding: .5%;  
     }
-.registrationSubmit { font-family: 'Eagle Lake', cursive; color: mediumslateblue; font-size: 20px;
+.registrationSubmit { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); font-family: 'Eagle Lake', cursive; color: mediumslateblue; font-size: 20px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px; 
     min-width: 200px;
@@ -51,11 +51,11 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     border: 1px solid darkslateblue; border-radius: 5px;
     background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
     }
-.registrationSubmit:link { text-decoration: none; 
+.registrationSubmit:link { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); text-decoration: none; 
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px;
     }
-.registrationSubmit:visited { text-decoration: none; 
+.registrationSubmit:visited { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); text-decoration: none; 
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px;
     }

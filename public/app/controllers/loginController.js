@@ -2,7 +2,7 @@ angular.module('eCommerce')
     .controller('loginController', function ($scope, $state, authService) {
         $scope.user = {};
         
-        /* remove this object before launching the app */
+        /** remove this object before launching the app */
         $scope.user = {
             username: 'phillippuckett88',
             password: 'phillippuckett88'

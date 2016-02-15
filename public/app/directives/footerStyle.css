@@ -1,9 +1,9 @@
-.footer { font-family: 'Eagle Lake', cursive; text-align: center; 
+.footer { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); font-family: 'Eagle Lake', cursive; text-align: center; 
     /*border-top: 2px ridge rgba(100,100,100,1);*/
     /*border: 1px solid white; border-radius: 5px;*/
     margin: auto; 
     }
-.subFooter { text-align: center; color: white; font-size: 20px;
+.subFooter { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); text-align: center; color: white; font-size: 20px;
     /*border: 1px solid deeppink;*/ border-radius: 5px;
     height: 200px; 
     min-width: 200px; width: 98%; 
@@ -11,7 +11,7 @@
     margin: .5%; 
     display: inline-flex; 
     }
-.footerInformation { 
+.footerInformation { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     /*border: 1px solid green; */
     text-align: center; 
     height: 175px; 
@@ -19,14 +19,14 @@
     padding: .5%; 
     margin: .5%; 
     }
-.footerInformation p { font-family: 'Fondamento', cursive;
+.footerInformation p { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); font-family: 'Fondamento', cursive;
     /*border: 1px solid yellow;*/
     text-align: center; 
     font-size: 15px; 
     color: white; 
     } 
 
-.socialMedia { text-align: center; 
+.socialMedia { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); text-align: center; 
     /*border: 1px solid deeppink;*/ 
     height: 35px;
     opacity: .5; 

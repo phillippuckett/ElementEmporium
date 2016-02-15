@@ -1,49 +1,37 @@
-#orderView { text-align: center; 
+#orderView { text-align: center; color: white; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     opacity: white .5;
-    padding: .75% .75% .75% 1.75%;
+    /*border: 1px solid white;*/
+    padding: .75% .75% .75% 1.75%;   
     }
-.order { color: white; text-align: center;
-    /*border: 1px solid red;*/ 
-    min-height: 525px; max-height: 100%;
-    min-width: 200px; max-width: 98%;
-    padding: .5%; 
-    margin: 0 0 .5% 0; 
-    }
-.profileRow { text-align: center;
+.orderViewRow { text-align: center;
     /*border: 1px solid green;*/
     width: 98%;
     display: inline-flex; flex-wrap: wrap;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     }
-.information { font-family: 'Fondamento', cursive; font-size: 20px; text-align: left;
--webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
--moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
-    border-radius: 30px; /*border: 1px solid grey;*/ background-size: cover;
+.accountInfo { font-family: 'Fondamento', cursive; font-size: 20px; text-align: center;
+    -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);-moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
+    /*border-radius: 30px; border: 1px solid blue;*/ background-size: cover;
     background-image: url('/app/images/moonDust.jpg'); background-color: white;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     padding: .5%; margin: .5%;  
     min-width: 31%; max-width: 100%;
     min-height: 150px; 
     }
-.information p { text-align: left; font-size: 20px; color: lightgrey;
+.accountInfo p { text-align: left; font-size: 20px; color: lightgrey;
+    /*border: 1px solid yellow;*/
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+    padding: 0 5%;
     margin: 5% 0;  
-    }  
-.orderInfo { font-size: 20px; text-align: left; color: lightgrey;
--webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
--moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
-    border-radius: 10px; /*border: 1px solid grey;*/ background-size: cover;
-    background-image: url('/app/images/moonDust.jpg'); background-color: white;
-    padding: .5%; margin: .5%;  
-    min-width: 31%; max-width: 550px;
-    min-height: 150px; 
-    }
-.orderMenu { font-size: 20px; text-align: center;
+    } 
+.accountRow { font-size: 20px; text-align: center;
+    /*border: 1px solid yellowgreen;*/
     padding: .5%;
     margin: .5%;  
     min-width: 150px; width: 100%; 
     min-height: 50px; 
-    }
-.orderMenuButton:link { font-family: 'Eagle Lake', cursive; text-decoration: none; font-size: 20px; color: mediumslateblue;
+    }    
+.accountButton:link { font-family: 'Eagle Lake', cursive; text-decoration: none; font-size: 20px; color: mediumslateblue;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;    
     border: 1px solid mediumslateblue; border-radius: 5px;  
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
@@ -51,7 +39,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
     padding: .75%;
     }
-.orderMenuButton:visited { font-family: 'Eagle Lake', cursive; color: mediumslateblue; text-decoration: none;
+.accountButton:visited { font-family: 'Eagle Lake', cursive; color: mediumslateblue; text-decoration: none;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px;    
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
@@ -59,7 +47,7 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);  
     padding: .75%;
     }
-.orderMenuButton:hover { font-family: 'Eagle Lake', cursive; color: white; text-decoration: none;
+.accountButton:hover { font-family: 'Eagle Lake', cursive; color: white; text-decoration: none;
     border: 1px solid darkslateblue; border-radius: 5px;
     background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
@@ -67,39 +55,54 @@ box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);      
     padding: .75%;
     }
-.orderFinalizationButton:link { font-family: 'Eagle Lake', cursive; color: mediumslateblue; text-decoration: none; font-size: 20px;
+            
+.orderTable { text-align: center; font-size: 30px;
+    border-radius: 10px; /*border: 1px solid grey;*/ background-size: cover;
+    background-image: url('/app/images/moonDust.jpg'); background-color: white;
+    -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); -moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
+    /*border: 1px solid darkred;*/
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+    display: inline-flex; flex-wrap: wrap;
+    margin: auto;
+    }     
+.orderInfo { font-size: 20px; text-align: left; color: white;
+    /*border: 1px solid rebeccapurple;*/
+    padding: .5%; margin: .5%;  
+    min-width: 150px; max-width: 550px;
+    min-height: 150px; 
+    margin: auto;
+    }  
+.orderTotalRow { font-size: 20px; text-align: center;
+    /*border: 1px solid orange;*/
+    padding: .5%;
+    margin: .5%;
+    min-width: 150px; width: 98%; 
+    min-height: 50px; 
+    }
+.orderTotal { font-family: 'Fondamento', cursive; color: white; text-align: right; font-size: 25px;
+    /*border: 1px solid darkturquoise;*/
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+}  
+.orderButtonRow {
+    /*border: 1px solid greenyellow;*/
+    width: 98%;
+    display: inline-flex;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+    padding: .5%;
+    } 
+.glitchSpace {
+    /*border: 1px solid red;*/
+    width: 100%;
+}    
+.orderButton { font-family: 'Eagle Lake', cursive; font-size: 20px; color: coral; text-decoration: none;
     background-image: url('/app/images/lightOrange.jpg'); background-color: orangered;
     border: 1px solid orangered; border-radius: 5px;  
-    padding: .75%; 
-    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
-    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
-    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
- 
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
+    margin: 0 .5%;  
+    padding: .75%;    
     }
-.orderFinalizationButton:visited { font-family: 'Eagle Lake', cursive; color: coral; text-decoration: none;
-    border: 1px solid orangered; border-radius: 5px;
-    background-image: url('/app/images/lightOrange.jpg'); background-color: orangered; 
-    padding: .75%;
-    }
-.orderFinalizationButton:hover { font-family: 'Eagle Lake', cursive; color: white; text-decoration: none; 
+.orderButton:hover { color: white; text-decoration: none; 
     background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
     border: 1px solid darkred; border-radius: 5px; 
-    padding: .75%;
+    padding: .75%;   
 }
-
-    /*
-    border: 1px solid grey; border-radius: 5px; background-size: cover;
-    background-image: url('/app/images/moonDust.jpg'); background-color: white;
-
-    background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
-    border: 1px solid mediumslateblue; border-radius: 5px; background-size: cover;
-
-    border: 1px solid darkslateblue; border-radius: 5px; background-size: cover;
-    background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
-    
-    border: 1px solid orange; border-radius: 5px; background-size: cover;
-    background-image: url('/app/images/lightOrange.jpg'); background-color: orangered;
-
-    background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
-    border: 1px solid darkred; border-radius: 5px; background-size: cover;
-    */

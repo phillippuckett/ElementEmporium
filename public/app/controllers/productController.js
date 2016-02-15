@@ -3,5 +3,6 @@ angular.module('eCommerce')
 
         $scope.productSearch = function (productName) {
             productService.searchProduct(productName);
+            console.log('Product Searched: ', productName);
         }
     });

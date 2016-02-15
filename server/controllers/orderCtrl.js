@@ -14,7 +14,9 @@ module.exports = {
     
     /** R */
     readOrder: function (req, res) {
-        Order.find(req.query).populate('user').exec(function (err, readOrder) {
+        Order.find(req.query)
+        .populate('user')
+        .exec(function (err, readOrder) {
             if (err) { res.status(500).send(err); }
             else { res.send(readOrder); }
         })
@@ -22,7 +24,9 @@ module.exports = {
     
     /** R */
     getUnfinishedOrder: function (req, res) {
-        Order.find({ user: req.params.userId, fulfilled: false }).exec(function (err, getOrder) {
+        Order
+        .find({ user: req.params.userId, fulfilled: false })
+        .exec(function (err, getOrder) {
             if (err) { res.status(500).send(err); }
             else { res.send(getOrder); }
         })
@@ -31,10 +35,12 @@ module.exports = {
     /** U */
     pushProductToOrder: function (req, res) {
         // http://mongoosejs.com/docs/api.html
-        Order.findByIdAndUpdate(req.params.orderId, {}, { new: true }, function ( err, updateOrder) {
+        Order
+        .findByIdAndUpdate(req.params.orderId, {}, { new: true }, function ( err, updateOrder) {
             if (err) { res.status(500).send(err); }
             else { 
                updateOrder.product.push(req.body.productId);
+               console.log('Product Pushed', req.body);
                updateOrder.save();
                 res.send(updateOrder); 
                 }            

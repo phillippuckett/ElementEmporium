@@ -20,7 +20,6 @@ angular.module('eCommerce')
 /** Footer */
 angular.module('eCommerce')
     .directive('footerDirective', function () {
-        console.log('phillippuckett88');
         return {
             restrict: 'E',
             templateUrl: 'app/directives/footer.html',

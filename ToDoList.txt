@@ -1,5 +1,6 @@
 Necessities:
--   Counter for like products, to consolidate the many boxes that appear
+-   displaying only added items on the orderTable
+-   Cancelling(delete order in user), submit(catalogging updating user), Shipping(not availaible)
 -   search bar that actually conducts a search
 -   fix the toggle/refresh/staying logged in issue
 

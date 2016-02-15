@@ -6,28 +6,28 @@
     display: inline-flex;
     width: 98%; 
     }   
-.subHeader {
+.subHeader { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     /*border: 1px solid deeppink;*/
     min-height: 25px;
     width: 100%;
     /*display: inline-flex;*/
 }        
-#homeIcon { font-size: 20px; text-align: left; color: white; text-decoration: none;
+#homeIcon { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); font-size: 20px; text-align: left; color: white; text-decoration: none;
     background-image: url('/app/images/avatarKorra.jpg'); background-size: contain; background-repeat: no-repeat;
     /*border: 1px solid yellow;*/
     padding: .25%;  
     width: 150px;
     }
-#homeIcon a:link { color: white; text-decoration: none; }   
-#homeIcon a:visited { color: white; text-decoration: none; }   
-#homeIcon a:hover { color: white; text-decoration: none; }
+#homeIcon a:link { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: white; text-decoration: none; }   
+#homeIcon a:visited { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: white; text-decoration: none; }   
+#homeIcon a:hover { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: white; text-decoration: none; }
 
 #search { color: darkslateblue; font-size: 20px; text-align: right;
     /*border: 1px solid springgreen;  */
     height: 50px;
     min-width: 500px; width: 100%;
     }
-#submit { font-family: 'Eagle Lake', cursive; color: mediumslateblue; font-size: 15px;
+#submit { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); font-family: 'Eagle Lake', cursive; color: mediumslateblue; font-size: 15px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
     border: 1px solid mediumslateblue; border-radius: 5px;     
     border-radius: 0 5px 5px 0;
@@ -35,11 +35,11 @@
     width: 100px;  
     float: right; 
     }
-#submit:hover { color: white;
+#submit:hover { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: white;
     border: 1px solid darkslateblue; border-radius: 0 5px 5px 0;
     background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue; 
     }
-#searchInput { color: midnightblue; font-size: 15px;
+#searchInput { font-family: 'Fondamento', cursive; color: black; text-align: left; font-size: 20px;
     background-image: url('/app/images/cloud.jpg'); background-size: cover; background-repeat: no-repeat; background-color: white;
     border-radius: 5px; border: 1px solid mediumslateblue;
     float: right;
@@ -48,22 +48,23 @@
     width: 300px;
     float: right; 
     }
-#headerMenu { color: mediumslateblue; font-size: 20px; text-align: right;
+    
+#headerMenu { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: mediumslateblue; font-size: 20px; text-align: right;
     /*border: 1px solid blue;*/
     }
-#headerMenu a:link { color: white; text-decoration: none; 
+#headerMenu a:link { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: white; text-decoration: none; 
     border: 1px solid mediumslateblue; border-radius: 5px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue; 
     }  
-#headerMenu a:visited { color: mediumslateblue; text-decoration: none; 
+#headerMenu a:visited { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: mediumslateblue; text-decoration: none; 
     border: 1px solid mediumslateblue; border-radius: 5px;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;; 
     }
-#headerMenu a:hover { color: white; text-decoration: none; 
+#headerMenu a:hover { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1); color: white; text-decoration: none; 
     border: 1px solid darkslateblue; border-radius: 5px;
     background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
     }
-#headerMenuButton { 
+#headerMenuButton { text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     padding: .5%; 
 }
     /*

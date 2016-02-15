@@ -9,7 +9,8 @@ angular.module('eCommerce')
                 })
             console.log('Function: searchProduct');
         };
-        /* GET and return this Data for this specific Product */
+        
+        /** GET and return this Data for this specific Product */
         this.getProduct = function () {
             return $http
                 .get('/api/product')

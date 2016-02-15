@@ -4,8 +4,12 @@ angular.module('eCommerce')
         return {
             restrict: 'E',
             templateUrl: 'app/directives/header.html',
-            controller: function ($scope, authService) {
+            controller: function ($scope, authService, productService) {
                 // console.log("Header");
+                $scope.productSearch = function (productName) {
+            productService.searchProduct(productName);
+            console.log('Product Searched: ', productName);
+        }
                             
                 /** Toggle */
                 authService.subscribe(function () {

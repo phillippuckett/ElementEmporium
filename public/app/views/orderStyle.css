@@ -22,39 +22,26 @@
     /*border: 1px solid yellow;*/
     text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     padding: 0 5%;
-    margin: 5% 0;  
+    margin: 5% 0;
+    height: 25px; 
     } 
 .accountRow { font-size: 20px; text-align: center;
     /*border: 1px solid yellowgreen;*/
     padding: .5%;
     margin: .5%;  
-    min-width: 150px; width: 100%; 
-    min-height: 50px; 
+    min-width: 150px; width: 100%;
+    height: 50px;
     }    
-.accountButton:link { font-family: 'Eagle Lake', cursive; text-decoration: none; font-size: 20px; color: mediumslateblue;
+.accountButton { font-family: 'Eagle Lake', cursive; text-decoration: none; font-size: 20px; color: mediumslateblue;
     background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;    
-    border: 1px solid mediumslateblue; border-radius: 5px;  
+    /*border: 1px solid mediumslateblue;*/ border-radius: 5px;  
     -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
     -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
-    padding: .75%;
+    margin: 0 .5%;      
+    padding: .75%;   
     }
-.accountButton:visited { font-family: 'Eagle Lake', cursive; color: mediumslateblue; text-decoration: none;
-    background-image: url('/app/images/lightBlue.jpg'); background-color: darkslateblue;
-    border: 1px solid mediumslateblue; border-radius: 5px;    
-    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
-    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
-    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);  
-    padding: .75%;
-    }
-.accountButton:hover { font-family: 'Eagle Lake', cursive; color: white; text-decoration: none;
-    border: 1px solid darkslateblue; border-radius: 5px;
-    background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;
-    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
-    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
-    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);      
-    padding: .75%;
-    }
+.accountButton:hover { color: white;background-image: url('/app/images/darkBlue.jpg'); background-color: midnightblue;border: 1px solid darkslateblue; }
             
 .orderTable { text-align: center; font-size: 30px;
     border-radius: 10px; /*border: 1px solid grey;*/ background-size: cover;
@@ -63,25 +50,24 @@
     /*border: 1px solid darkred;*/
     text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     display: inline-flex; flex-wrap: wrap;
+    padding: .5%;
     margin: auto;
     }     
 .orderInfo { font-size: 20px; text-align: left; color: white;
     /*border: 1px solid rebeccapurple;*/
-    padding: .5%; margin: .5%;  
+    padding: .5% 1%; 
+    margin: .5%;  
     min-width: 150px; max-width: 550px;
     min-height: 150px; 
-    margin: auto;
-    }  
+    }    
 .orderTotalRow { font-size: 20px; text-align: center;
     /*border: 1px solid orange;*/
     padding: .5%;
-    margin: .5%;
-    min-width: 150px; width: 98%; 
+    margin: .5%; 
     min-height: 50px; 
     }
-.orderTotal { font-family: 'Fondamento', cursive; color: white; text-align: right; font-size: 25px;
+.orderTotal { font-family: 'Fondamento', cursive; color: white; text-align: right; font-size: 25px; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     /*border: 1px solid darkturquoise;*/
-    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
 }  
 .orderButtonRow {
     /*border: 1px solid greenyellow;*/
@@ -90,19 +76,16 @@
     text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     padding: .5%;
     } 
+    
 .glitchSpace {
     /*border: 1px solid red;*/
     width: 100%;
 }    
 .orderButton { font-family: 'Eagle Lake', cursive; font-size: 20px; color: coral; text-decoration: none;
-    background-image: url('/app/images/lightOrange.jpg'); background-color: orangered;
-    border: 1px solid orangered; border-radius: 5px;  
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75); 
+    background-image: url('/app/images/lightOrange.jpg'); background-color: orangered;
+    /*border: 1px solid orangered;*/ border-radius: 5px;  
     margin: 0 .5%;  
     padding: .75%;    
     }
-.orderButton:hover { color: white; text-decoration: none; 
-    background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;
-    border: 1px solid darkred; border-radius: 5px; 
-    padding: .75%;   
-}
+.orderButton:hover { color: white;background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;border: 1px solid darkred; }

@@ -7,7 +7,7 @@ var Schema = mongoose.Schema;
 var OrderSchema = new Schema({
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     placed: { type: Date, default: Date.now },
-    product: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
+    product: [ { type: mongoose.Schema.Types.ObjectId, ref: 'Product' } ],
     fulfilled: {type: Boolean, default: false }
 })
 

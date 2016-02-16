@@ -1,5 +1,6 @@
 <div id="orderView">
 
+    <div class="orderButtonRow" id="OrderViewTitle">Account Details</div>
     <div class="orderViewRow">
         <div class="accountInfo">
             Profile
@@ -23,7 +24,6 @@
             <p>Exp: {{user.mm}}/{{user.yyyy}}</p>
         </div>
     </div>
-
     <div class="orderViewRow">
         <div class="accountRow">
             <a class="accountButton" href="/#/order">EDIT INFORMATION</a>
@@ -31,6 +31,8 @@
         </div>
     </div>
 
+
+    <div class="orderButtonRow" id="OrderViewTitle">Order Cart</div>
     <div class="orderViewRow">
         <div class="orderTable">
             <div class="orderInfo" ng-repeat="product in consolidatedProducts track by $index">
@@ -54,18 +56,21 @@
         <a class="orderButton" ng-click="finalizeOrder()">FINALIZE ORDER</a>
     </div>
 
-    <div class="orderButtonRow" id="OHH">
-        Your Order History
-    </div>
 
+    <div class="orderButtonRow" id="OrderViewTitle">Order History</div>
     <div class="orderViewRow">
         <div class="history" ng-repeat="history in historiesArray">
-            <div class="orderHistory" ng-repeat="order in history.order">
+            <div class="historyOrder" ng-repeat="order in history.order">
                 <p>Order Number: {{ order._id }}</p>
+                <div class="historyOrderProduct" ng-repeat="product in history.order">
+                    <div class="historyOrderProductObject" ng-repeat="product in order.product">
+                        <p>{{ product.quantity }} {{ product.title }} atom(s) for ${{ product.price }}</p>
+                    </div>
+                </div>
                 <p>Placed: {{ order.placed }}</p>
+                <p style=" text-align: right;">Total: $XX.xx</p>
             </div>
             <p>Order Tracking Number: {{ history._id }}</p>
         </div>
-    </div>
 
-</div>
+    </div>

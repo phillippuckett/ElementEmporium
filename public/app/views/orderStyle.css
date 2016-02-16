@@ -10,7 +10,7 @@
     }
 .accountInfo { font-family: 'Fondamento', cursive; font-size: 20px; text-align: center; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);-moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);
-    /*border-radius: 30px; border: 1px solid blue;*/ background-size: cover;
+    border-radius: 30px; /*border: 1px solid blue;*/ background-size: cover;
     background-image: url('/app/images/moonDust.jpg'); background-color: white;
     padding: .5%; margin: .5%;  
     min-width: 31%; max-width: 100%;
@@ -88,7 +88,7 @@
     }
 .orderButton:hover { color: white;background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;border: 1px solid darkred; }
 
-#OHH { font-family: 'Fondamento', cursive; font-size: 30px; color: white; text-align: center; 
+#OrderViewTitle { font-family: 'Fondamento', cursive; font-size: 30px; color: white; text-align: center; 
     /*border: 1px solid yellow;*/
     margin: .75%;
     padding: .75%;
@@ -96,14 +96,21 @@
 .history { font-family: 'Fondamento', cursive; font-size: 20px; color: lightgrey; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
     background-image: url('/app/images/moonDust.jpg'); background-color: white; background-size: cover; background-repeat: no-repeat;
     -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);-moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1);   
-    /*border: 1px solid red;*/ border-radius: 5px;
+    /*border: 1px solid lightgoldenrodyellow;*/ border-radius: 30px;
     /*display: inline-flex;*/
     width: 45%;
     padding: 1%;
     margin: .75%;
     }
-/*.history p { border: 1px solid limegreen; }*/
-.orderHistory { text-align: left; color: white; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
-    /*border: 1px solid white;*/
-    padding: .5%;
+.history p { /*border: 1px solid limegreen;*/ }
+.historyOrder { text-align: left; color: white; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+    /*border: 1px solid sandybrown;*/
     }
+.historyOrderProduct { text-align: left; color: white; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+    /*border: 1px solid indianred;*/
+    }
+.historyOrderProductObject { text-align: left; color: white; text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+    /*border: 1px solid mediumslateblue;*/
+    width: 30%;
+    display: inline-flex;
+    }    

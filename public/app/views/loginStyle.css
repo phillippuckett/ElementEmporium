@@ -11,6 +11,7 @@
 }
 
 .loginColumns {
+    /*border: 1px solid yellowgreen;*/
     width: 33%;
     margin: 0 auto;
 }
@@ -18,8 +19,8 @@
     /*border: 1px solid green;*/ border-radius: 30px;
     box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); -webkit-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); -moz-box-shadow: inset 0px -5px 30px 15px rgba(0,0,0,1); 
     background-image: url('/app/images/moonDust.jpg'); background-size: cover; background-color: white; background-repeat: no-repeat;
-    min-height: 350px; max-height: 450px;
-    min-width: 350px; width: 100%; max-width: 450px;
+    min-height: 350px;
+    min-width: 350px;
     padding: 5%;
     }
     

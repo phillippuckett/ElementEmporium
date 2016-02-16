@@ -53,7 +53,19 @@
         <div class="glitchSpace"></div>
         <a class="orderButton" ng-click="finalizeOrder()">FINALIZE ORDER</a>
     </div>
-    
-    <div class="orderHistory">{{ orderArray }}</div>
+
+    <div class="orderButtonRow" id="OHH">
+        Your Order History
+    </div>
+
+    <div class="orderViewRow">
+        <div class="history" ng-repeat="history in historiesArray">
+            <div class="orderHistory" ng-repeat="order in history.order">
+                <p>Order Number: {{ order._id }}</p>
+                <p>Placed: {{ order.placed }}</p>
+            </div>
+            <p>Order Tracking Number: {{ history._id }}</p>
+        </div>
+    </div>
 
 </div>

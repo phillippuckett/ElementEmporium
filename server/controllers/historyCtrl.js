@@ -19,10 +19,12 @@ module.exports = {
 
     },
     /** R */
-    getHistory: function (req, res, next) {
+    getHistory: function (req, res) {
+        // console.log("Searching for: " + req.query)
         History
-            .find.populate('history').exec()
-            .then(function (err, getHistory) {
+            .find({ user: req.user._id })
+            .populate('order')
+            .exec(function (err, getHistory) {
                 if (err) { res.status(500).send(err); }
                 else { res.status(200).send(getHistory); }
             })

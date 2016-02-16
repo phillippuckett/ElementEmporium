@@ -6,6 +6,18 @@ angular.module('eCommerce', ['ui.router'])
                 url: '/home',
                 templateUrl: 'app/views/homeView.html',
                 controller: 'homeController',
+                resolve: {
+                    user: function (authService, $state) {
+                        return authService.getCurrentUserObject().then(function (response) {
+                            if (response.status != 200) {
+                                $state.go('login')
+                            }
+                            console.log(response);
+                            return response.data;
+                        })
+                        console.log('Resolve in "order"');
+                    }
+                }
             })
             .state('login', {
                 url: '/login',

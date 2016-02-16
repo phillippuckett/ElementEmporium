@@ -1,6 +1,5 @@
 angular.module('eCommerce')
-    .service('historyService', function ($http) {
-       
+    .service('historyService', function ($http) {      
         /** Create User Order History */
         this.createHistory = function (orderIdPar) {
             //    console.log(orderId);
@@ -9,14 +8,16 @@ angular.module('eCommerce')
                 .then(function (result) {
                     return result.data;
                 })
-        }
-        
+        } 
         /** Get Data from User Order History */
-        this.getHistory = function (userHistory) {
+        this.getHistory = function () {
+            // console.log(historyId);
             return $http
-                .get('/api/history' + userHistory)
+                .get('/api/history')
                 .then(function (resultOrderHistory) {
+                    // console.log(resultOrderHistory);
                     return resultOrderHistory.data;
                 })
-        }
+                console.log('Function: getHistory');
+        };
     });

@@ -109,11 +109,10 @@ angular.module('eCommerce')
                 })
         },
         /** Get Order History onto the View */
-        $scope.getHistory = function () {
-            historyService.getHistory()
-                .then(function () {
-
-                })
-        }
+        historyService.getHistory()
+            .then(function (orderArray) {
+                $scope.historiesArray = orderArray;
+                console.log($scope.historiesArray);
+            });
     });
    

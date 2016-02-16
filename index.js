@@ -9,6 +9,7 @@ var cors = require('cors');
 var productCtrl = require('./server/controllers/productCtrl');
 var userCtrl = require('./server/controllers/userCtrl');
 var orderCtrl = require('./server/controllers/orderCtrl');
+var historyCtrl = require('./server/controllers/historyCtrl');
 
 /** Services */
 var passport = require('./server/services/passport');
@@ -66,6 +67,9 @@ app.post('/api/order', orderCtrl.createOrder);
 app.get('/api/order', orderCtrl.readOrder);
 app.get('/api/order/:userId', orderCtrl.getUnfinishedOrder);
 app.put('/api/order/:orderId', orderCtrl.pushProductToOrder);
+/** History End Points */
+app.get('/api/history', historyCtrl.getHistory);
+app.post('/api/history', historyCtrl.createHistory);
 
 /** Connections */
 var nodePort = 3000;

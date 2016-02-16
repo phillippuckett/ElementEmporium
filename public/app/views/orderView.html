@@ -51,7 +51,9 @@
     </div>
     <div class="orderButtonRow">
         <div class="glitchSpace"></div>
-        <a class="orderButton" href="/#/order">FINALIZE ORDER</a>
+        <a class="orderButton" ng-click="finalizeOrder()">FINALIZE ORDER</a>
     </div>
+    
+    <div class="orderHistory">{{ orderArray }}</div>
 
 </div>

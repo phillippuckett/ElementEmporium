@@ -1,5 +1,5 @@
 angular.module('eCommerce')
-    .controller('orderController', function ($scope, authService, orderService) {
+    .controller('orderController', function ($scope, authService, orderService, historyService) {
         // console.log('Order View');
               
         /** Connects UserData with the orderView */
@@ -7,11 +7,21 @@ angular.module('eCommerce')
             $scope.user = currentUserResult.data;
             console.log($scope.user);
         });
-        /** Connects an UserObject with an OrderObject */
+        /** Connects a UserObject with an OrderObject */
         $scope.getUnfinishedOrder = function () {
             orderService
                 .getUnfinishedOrder(authService.getCurrentUser())
                 .then(function (resultOrder) {
+                    if (resultOrder.length === 0) {
+                        orderService
+                            .createOrder(authService.getCurrentUser()).then(function (newOrder) {
+                                console.log('This is the submitted order', newOrder)
+                                $scope.orderId = newOrder;
+                                /** this holds the new id that came back */
+                            })
+                    } else {
+                        $scope.orderId = resultOrder[0]._id;
+                    }
                     var consolidatedProducts = [
                         {
                             title: 'Carbon',
@@ -89,4 +99,21 @@ angular.module('eCommerce')
                 })
         };
         $scope.getUnfinishedOrder();
+        
+        /** Creating an OrderObject from UserObject */
+        $scope.finalizeOrder = function () {
+            historyService
+                .createHistory($scope.orderId)
+                .then(function (result) {
+                    $scope.orderArray = result.order;
+                })
+        },
+        /** Get Order History onto the View */
+        $scope.getHistory = function () {
+            historyService.getHistory()
+                .then(function () {
+
+                })
+        }
     });
+   

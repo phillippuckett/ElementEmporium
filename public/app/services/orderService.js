@@ -33,4 +33,14 @@ angular.module('eCommerce')
                 })
             console.log('Function: pushProductToOrder');
         };
+        /** Delete an OrderObject from UserObject */
+        this.deleteOrder = function (orderId, currentUser) {
+            console.log(' ', orderId);
+            return $http
+                .delete('api/order/:id' + currentUser)
+                .then(function () {
+                    console.log();
+                    return data;
+                })
+        };
     });

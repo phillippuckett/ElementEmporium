@@ -89,3 +89,5 @@
     padding: .75%;    
     }
 .orderButton:hover { color: white;background-image: url('/app/images/darkOrange.jpg'); background-color: maroon;border: 1px solid darkred; }
+
+.orderHistory { border: 1px solid white; color: white; }

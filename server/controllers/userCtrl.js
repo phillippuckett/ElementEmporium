@@ -4,22 +4,25 @@ module.exports = {
     /** C *//** https://github.com/dallincrane/example-local-auth */
     register: function (req, res, next) {
         console.log('Creating New User');
-        
-        User.create(req.body, function (err, registerUser) {
-            if (err) {
-                console.error(err);
-                console.log('Existing User');
-                return res.status(500).json(err);
-            }
-            res.status(200).json(registerUser);
-        })
+
+        User
+            .create(req.body, function (err, registerUser) {
+                if (err) {
+                    console.error(err);
+                    console.log('Existing User');
+                    return res.status(500).json(err);
+                }
+                res.status(200).json(registerUser);
+            })
     },
     /** R */
     readUser: function (req, res, next) {
-        User.find.populate('order').exec().then(function (err, readUser) {
-            if (err) { res.status(500).send(err); }
-            else { res.status(200).send(readUser); }
-        })
+        User
+            .find.populate('order').exec()
+            .then(function (err, readUser) {
+                if (err) { res.status(500).send(err); }
+                else { res.status(200).send(readUser); }
+            })
     },
     
     /** R *//** https://github.com/dallincrane/example-local-auth */

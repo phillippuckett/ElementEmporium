@@ -3,10 +3,10 @@ angular.module('eCommerce')
         $scope.user = {};
         
         /** remove this object before launching the app */
-        $scope.user = {
-            username: 'phillippuckett88',
-            password: 'phillippuckett88'
-        }
+        // $scope.user = {
+        //     username: 'phillippuckett88',
+        //     password: 'phillippuckett88'
+        // }
 
         $scope.login = function () {
             authService.login($scope.user).then(function () {
